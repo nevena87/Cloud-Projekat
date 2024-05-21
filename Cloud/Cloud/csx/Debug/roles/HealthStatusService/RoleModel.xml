@@ -16,12 +16,12 @@
   </Runtime>
   <Properties>
     <Property name="TargetFrameworkVersion" value="v4.5.1" />
-    <Property name="OutputDir" value="D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\obj\Debug\HealthStatusService\" />
+    <Property name="OutputDir" value="C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\obj\Debug\HealthStatusService\" />
     <Property name="RoleTargetFramework" value="v4.5.1" />
-    <Property name="SitePhysicalPath" value="D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\HealthStatusService\" />
+    <Property name="SitePhysicalPath" value="C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\HealthStatusService\" />
     <Property name="EntryPoint" value="HealthStatusService.dll" />
     <Property name="SetPlatform" value="Platform=AnyCPU" />
-    <Property name="SourceDir" value="D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\HealthStatusService\" />
+    <Property name="SourceDir" value="C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\HealthStatusService\" />
     <Property name="RoleType" value="Web" />
     <Property name="Platform" value="AnyCPU" />
     <Property name="RoleName" value="HealthStatusService" />
@@ -31,7 +31,7 @@
     <Property name="TargetRuntimeVersion" value="v4.0" />
   </Properties>
   <Sites>
-    <Site name="Web" physicalDirectory="D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\HealthStatusService\">
+    <Site name="Web" physicalDirectory="C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\HealthStatusService\">
       <Bindings>
         <Binding name="Endpoint1" endpointName="Endpoint1" />
       </Bindings>

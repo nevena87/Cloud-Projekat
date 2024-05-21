@@ -12,14 +12,14 @@ namespace RedditService.Controllers
         private readonly SignupDataRepository _userRepository;
         private readonly TemaRepository _temaRepository;
         private readonly KomentarRepository _komentarRepository;
-        //private readonly PretplataRepository _pretplataRepository;
+        private readonly PretplataRepository _pretplataRepository;
 
         public TemaController()
         {
             _userRepository = new SignupDataRepository();
             _temaRepository = new TemaRepository();
             _komentarRepository = new KomentarRepository();
-           // _pretplataRepository = new PretplataRepository();
+            _pretplataRepository = new PretplataRepository();
         }
 
         // GET: Index
@@ -40,7 +40,7 @@ namespace RedditService.Controllers
 
             var sveTeme = _temaRepository.GetAllTeme().ToList();
             var userTeme = _temaRepository.GetTemeByUserEmail(userEmail).ToList();
-           // var pretplate = _pretplataRepository.GetPretplateByUserEmail(userEmail).ToList();
+            var pretplate = _pretplataRepository.GetPretplateByUserEmail(userEmail).ToList();
 
             foreach (var tema in sveTeme)
             {
@@ -57,7 +57,7 @@ namespace RedditService.Controllers
                 Signup = signupDetails,
                 Teme = sveTeme,
                 UserTeme = userTeme,
-               // Pretplate = pretplate
+                Pretplate = pretplate
             };
 
             return View(model);
@@ -81,7 +81,7 @@ namespace RedditService.Controllers
                     return HttpNotFound();
                 }
 
-                // Postavite PartitionKey i RowKey ako nedostaju u modelu
+             
                 model.Signup.PartitionKey = signupDetails.PartitionKey;
                 model.Signup.RowKey = signupDetails.RowKey;
 
@@ -89,7 +89,7 @@ namespace RedditService.Controllers
                 ViewBag.Message = "Profil je uspešno ažuriran.";
             }
 
-            // Ponovno učitavanje svih tema
+           
             var sveTeme = _temaRepository.GetAllTeme().ToList();
             var userTeme = _temaRepository.GetTemeByUserEmail(userEmail).ToList();
             foreach (var tema in sveTeme)
@@ -131,11 +131,11 @@ namespace RedditService.Controllers
                 _temaRepository.AddTema(tema, imageFile);
                 ViewBag.LastAddedTemaNaslov = tema.Naslov;
 
-                // Učitavanje svih tema ponovo
+                
                 var sveTeme = _temaRepository.GetAllTeme().ToList();
                 var userTeme = _temaRepository.GetTemeByUserEmail(userEmail).ToList();
 
-                // Ažuriranje modela sa novom listom tema
+                
                 var model = new EditViewModel
                 {
                     Signup = signupDetails,
@@ -152,7 +152,7 @@ namespace RedditService.Controllers
         [HttpGet]
         public ActionResult Search(string searchTerm)
         {
-            // Dobijanje svih tema koje sadrže uneti search term u naslovu
+            
             var searchedTemes = _temaRepository.GetAllTeme().Where(t => t.Naslov.Contains(searchTerm)).ToList();
 
             foreach (var tema in searchedTemes)
@@ -179,7 +179,7 @@ namespace RedditService.Controllers
         {
             var allTemes = _temaRepository.GetAllTeme().ToList();
 
-            // Sortiranje teme na osnovu naslova u rastućem ili opadajućem redosledu
+            
             switch (sortOrder)
             {
                 case "naslov_asc":
@@ -221,7 +221,7 @@ namespace RedditService.Controllers
             if (tema != null)
             {
                 tema.Upvotes++; // Povećajte broj upvotova
-                _temaRepository.UpdateTema(tema); // Ažurirajte temu u bazi podataka
+                _temaRepository.UpdateTema(tema); 
             }
 
             var model = new EditViewModel
@@ -244,7 +244,7 @@ namespace RedditService.Controllers
             if (tema != null)
             {
                 tema.Downvotes++; // Povećajte broj downvotova
-                _temaRepository.UpdateTema(tema); // Ažurirajte temu u bazi podataka
+                _temaRepository.UpdateTema(tema); // Ažuriranje
             }
 
             var model = new EditViewModel
@@ -399,8 +399,8 @@ namespace RedditService.Controllers
                 return HttpNotFound();
             }
 
-          //  var pretplata = new Pretplata(userEmail, temaId);
-           // _pretplataRepository.AddPretplata(pretplata);
+           var pretplata = new Pretplata(userEmail, temaId);
+           _pretplataRepository.AddPretplata(pretplata);
 
             return RedirectToAction("Index");
         }
@@ -421,7 +421,7 @@ namespace RedditService.Controllers
                 return HttpNotFound();
             }
 
-           // _pretplataRepository.DeletePretplata(userEmail, temaId);
+            _pretplataRepository.DeletePretplata(userEmail, temaId);
 
             return RedirectToAction("Index");
         }

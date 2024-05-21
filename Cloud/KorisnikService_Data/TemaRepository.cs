@@ -35,12 +35,12 @@ namespace KorisnikService_Data
 
             if (imageFile != null && imageFile.ContentLength > 0)
             {
-                // Sačuvaj sliku na serveru
+               
                 string imageName = Path.GetFileName(imageFile.FileName);
                 CloudBlockBlob blockBlob = _blobContainer.GetBlockBlobReference(imageName);
                 blockBlob.UploadFromStream(imageFile.InputStream);
 
-                // Postavi URL slike u modelu teme
+               
                 tema.SlikaUrl = blockBlob.Uri.ToString();
             }
 

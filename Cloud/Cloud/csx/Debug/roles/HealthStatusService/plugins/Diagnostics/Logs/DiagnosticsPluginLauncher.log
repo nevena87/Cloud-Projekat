@@ -1,19 +1,19 @@
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:21 PM] At least one other instance of the launcher is running. Will wait until they all finish
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:21 PM] Service running in Emulator Mode, will not wait/kill other instances of the launcher
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:21 PM] Emulator config file set to D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:21 PM] DiagnosticsStoreRootPath set to: C:\Users\Milijana\AppData\Local\dftmp\Resources\bc76b4ae-3601-4225-8f8d-aa6100c9b829
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:21 PM] Loading config file: D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:21 PM] Config file to read: D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:21 PM] Checking VM Type
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:21 PM] Emulator config file set to D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:21 PM] Extension set to Emulator Mode
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:21 PM] Reading XML configuration file
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:21 PM] Bypassing private config decryption
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:21 PM] Stopping the running plugin, if any
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:22 PM] No DiagnosticsPlugin is running.
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:22 PM] Killing any DiagnosticsPlugin that might remain.
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:22 PM] Killing any MonAgentHost that might remain.
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:22 PM] Diagnostics plugin stopped successfully
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:36:22 PM] Resetting DiagnosticPlugin
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:37:34 PM] DiagnosticsPlugin launched successfully with new configuration
-DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:37:34 PM] DiagnosticPlugin exited with code 0
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:08 PM] At least one other instance of the launcher is running. Will wait until they all finish
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:08 PM] Service running in Emulator Mode, will not wait/kill other instances of the launcher
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:08 PM] Emulator config file set to C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:08 PM] DiagnosticsStoreRootPath set to: C:\Users\Lenovo\AppData\Local\dftmp\Resources\b2804847-8ddf-41c4-876c-2f14055e1392
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:08 PM] Loading config file: C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:08 PM] Config file to read: C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:08 PM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:08 PM] Emulator config file set to C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthStatusService\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:08 PM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:08 PM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:08 PM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:08 PM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:09 PM] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:09 PM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:09 PM] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:09 PM] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:46:09 PM] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:47:20 PM] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [5/21/2024 6:47:20 PM] DiagnosticPlugin exited with code 0

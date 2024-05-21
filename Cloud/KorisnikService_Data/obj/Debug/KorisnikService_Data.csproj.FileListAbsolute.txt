@@ -12,3 +12,17 @@ D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikServ
 D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.csproj.CopyComplete
 D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.dll
 D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.pdb
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\KorisnikService_Data.dll
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\KorisnikService_Data.pdb
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.dll
+C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.pdb

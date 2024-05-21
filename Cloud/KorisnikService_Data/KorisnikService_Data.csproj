@@ -56,6 +56,8 @@
     <Compile Include="KomentarRepository.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="LoginDataRepository.cs" />
+    <Compile Include="Pretplata.cs" />
+    <Compile Include="PretplataRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Signup.cs" />
     <Compile Include="SignupDataRepository.cs" />

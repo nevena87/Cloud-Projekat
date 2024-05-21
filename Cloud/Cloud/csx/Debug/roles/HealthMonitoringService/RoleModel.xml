@@ -16,7 +16,7 @@
   </Runtime>
   <Properties>
     <Property name="TargetFrameworkVersion" value="v4.5.1" />
-    <Property name="OutputDir" value="D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\obj\Debug\HealthMonitoringService\" />
+    <Property name="OutputDir" value="C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\obj\Debug\HealthMonitoringService\" />
     <Property name="RoleTargetFramework" value="v4.5.1" />
     <Property name="SitePhysicalPath" value="" />
     <Property name="EntryPoint" value="HealthMonitoringService.dll" />

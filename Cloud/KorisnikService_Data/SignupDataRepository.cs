@@ -42,14 +42,14 @@ namespace KorisnikService_Data
                 throw new ArgumentException("PartitionKey and RowKey must be set.");
             }
 
-            // Retrieve the existing entity
+            
             TableOperation retrieveOperation = TableOperation.Retrieve<Signup>(updatedSignup.PartitionKey, updatedSignup.RowKey);
             TableResult retrievedResult = _table.Execute(retrieveOperation);
             Signup existingSignup = (Signup)retrievedResult.Result;
 
             if (existingSignup != null)
             {
-                // Update the existing entity's properties
+                
                 existingSignup.Ime = updatedSignup.Ime;
                 existingSignup.Prezime = updatedSignup.Prezime;
                 existingSignup.Adresa = updatedSignup.Adresa;
@@ -58,10 +58,10 @@ namespace KorisnikService_Data
                 existingSignup.BrojTelefona = updatedSignup.BrojTelefona;
                 existingSignup.Email = updatedSignup.Email;
                 existingSignup.Lozinka = updatedSignup.Lozinka;
-                // Check if a new image file is provided
+               
                 if (newImageFile != null && newImageFile.ContentLength > 0)
                 {
-                    // Delete the old image if it exists
+                    
                     if (!string.IsNullOrEmpty(existingSignup.Slika))
                     {
                         Uri oldImageUri = new Uri(existingSignup.Slika);
@@ -70,14 +70,14 @@ namespace KorisnikService_Data
                         oldBlockBlob.DeleteIfExists();
                     }
 
-                    // Upload the new image
+                   
                     string imageName = Path.GetFileName(newImageFile.FileName);
                     CloudBlockBlob blockBlob = _blobContainer.GetBlockBlobReference(imageName);
                     blockBlob.UploadFromStream(newImageFile.InputStream);
                     existingSignup.Slika = blockBlob.Uri.ToString();
                 }
 
-                // Execute the update operation
+                
                 TableOperation updateOperation = TableOperation.Replace(existingSignup);
                 _table.Execute(updateOperation);
             }
