@@ -1,0 +1,127 @@
+﻿@model KorisnikService_Data.Signup
+@{
+    ViewBag.Title = "Sign Up";
+    Layout = null; // Uklanja layout stranice ako je postavljen
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            background-image: url('../../Pictures/rd.jpg'); /* Postavljanje slike kao pozadinu */
+            background-size: cover; /* Omogućuje da se slika prilagodi veličini ekrana */
+            background-position: center; /* Postavljanje slike u sredinu ekrana */
+            font-family: Arial, sans-serif; /* Postavljanje fonta */
+            color: white; /* Postavljanje boje teksta na bijelu */
+            text-align: center; /* Centriranje teksta na sredinu ekrana */
+            padding-top: 50px; /* Dodavanje razmaka iznad forme */
+        }
+
+        form {
+            margin: 0 auto; /* Centriranje forme na stranici */
+            padding: 20px;
+            width: 300px;
+            height: 400px; /* Fiksna visina forme */
+            overflow-y: auto; /* Omogućuje skrolovanje ako je sadržaj forme veći od fiksne visine */
+            background-color: rgba(0, 0, 0, 0.5); /* Providnost forme */
+            border-radius: 10px; /* Zaobljeni rubovi forme */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left; /* Poravnanje teksta lijevo */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px); /* Smanjivanje širine input polja za 20px zbog paddinga */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: darkslategray;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100px; /* Postavljanje fiksne širine */
+        }
+
+            input[type="submit"]:hover,
+            a.button:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <h2>Sign Up</h2>
+    @using (Html.BeginForm("Index", "Signup", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div>
+            <label for="Ime">Ime:</label>
+            @Html.TextBoxFor(model => model.Ime)
+        </div>
+        <div>
+            <label for="Prezime">Prezime:</label>
+            @Html.TextBoxFor(model => model.Prezime)
+        </div>
+        <div>
+            <label for="Adresa">Adresa:</label>
+            @Html.TextBoxFor(model => model.Adresa)
+        </div>
+        <div>
+            <label for="Grad">Grad:</label>
+            @Html.TextBoxFor(model => model.Grad)
+        </div>
+        <div>
+            <label for="Drzava">Drzava:</label>
+            @Html.TextBoxFor(model => model.Drzava)
+        </div>
+        <div>
+            <label for="BrojTelefona">BrojTelefona:</label>
+            @Html.TextBoxFor(model => model.BrojTelefona)
+        </div>
+        <div>
+            <label for="Email">Email:</label>
+            @Html.TextBoxFor(model => model.Email)
+        </div>
+        <div>
+            <label for="Lozinka">Lozinka:</label>
+            @Html.PasswordFor(model => model.Lozinka)
+        </div>
+        <div>
+            <label for="Slika">Slika:</label>
+            <input type="file" name="imageFile" id="imageFile" onchange="previewImage(event)" />
+        </div>
+        <div id="imagePreview" style="display: none;">
+            <label for="preview">Pregled slike:</label>
+            <img id="preview" src="#" alt="Slika" style="max-width: 100px; max-height: 100px;" />
+        </div>
+        <div>
+            <input type="submit" value="Sign Up" />
+        </div>
+        <script>
+            function previewImage(event) {
+                var reader = new FileReader();
+                reader.onload = function () {
+                    var output = document.getElementById('preview');
+                    output.src = reader.result;
+                    document.getElementById('imagePreview').style.display = 'block';
+                }
+                reader.readAsDataURL(event.target.files[0]);
+            }
+        </script>
+    }
+</body>
+</html>

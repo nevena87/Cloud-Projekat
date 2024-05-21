@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthMonitoringService", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "NotificationService\NotificationService.csproj", "{ED24D670-6F4D-45ED-BEE8-BAFA0EAA9889}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KorisnikService_Data", "KorisnikService_Data\KorisnikService_Data.csproj", "{3B5E58A4-49E6-4C83-A7C7-2358CCE522AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{ED24D670-6F4D-45ED-BEE8-BAFA0EAA9889}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED24D670-6F4D-45ED-BEE8-BAFA0EAA9889}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED24D670-6F4D-45ED-BEE8-BAFA0EAA9889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B5E58A4-49E6-4C83-A7C7-2358CCE522AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B5E58A4-49E6-4C83-A7C7-2358CCE522AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B5E58A4-49E6-4C83-A7C7-2358CCE522AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B5E58A4-49E6-4C83-A7C7-2358CCE522AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
