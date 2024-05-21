@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\My Computer\\Desktop\\DRUGI_SEM 4. GODINA\\CLOUD\\posl\\Cloud-Projekat\\Cloud\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3B5E58A4-49E6-4C83-A7C7-2358CCE522AE}|KorisnikService_Data\\KorisnikService_Data.csproj|c:\\users\\my computer\\desktop\\drugi_sem 4. godina\\cloud\\posl\\cloud-projekat\\cloud\\korisnikservice_data\\pretplata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B5E58A4-49E6-4C83-A7C7-2358CCE522AE}|KorisnikService_Data\\KorisnikService_Data.csproj|solutionrelative:korisnikservice_data\\pretplata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30C2A12C-1C84-47D9-AD90-BB0486D8A39B}|RedditService\\RedditService.csproj|c:\\users\\my computer\\desktop\\drugi_sem 4. godina\\cloud\\posl\\cloud-projekat\\cloud\\redditservice\\views\\tema\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30C2A12C-1C84-47D9-AD90-BB0486D8A39B}|RedditService\\RedditService.csproj|solutionrelative:redditservice\\views\\tema\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pretplata.cs",
+              "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\DRUGI_SEM 4. GODINA\\CLOUD\\posl\\Cloud-Projekat\\Cloud\\KorisnikService_Data\\Pretplata.cs",
+              "RelativeDocumentMoniker": "KorisnikService_Data\\Pretplata.cs",
+              "ToolTip": "C:\\Users\\My Computer\\Desktop\\DRUGI_SEM 4. GODINA\\CLOUD\\posl\\Cloud-Projekat\\Cloud\\KorisnikService_Data\\Pretplata.cs",
+              "RelativeToolTip": "KorisnikService_Data\\Pretplata.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T19:06:33.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\DRUGI_SEM 4. GODINA\\CLOUD\\posl\\Cloud-Projekat\\Cloud\\RedditService\\Views\\Tema\\Index.cshtml",
+              "RelativeDocumentMoniker": "RedditService\\Views\\Tema\\Index.cshtml",
+              "ToolTip": "C:\\Users\\My Computer\\Desktop\\DRUGI_SEM 4. GODINA\\CLOUD\\posl\\Cloud-Projekat\\Cloud\\RedditService\\Views\\Tema\\Index.cshtml",
+              "RelativeToolTip": "RedditService\\Views\\Tema\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-21T19:04:12.457Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

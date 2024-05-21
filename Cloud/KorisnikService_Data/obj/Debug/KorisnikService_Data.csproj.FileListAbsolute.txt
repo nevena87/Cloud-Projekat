@@ -26,3 +26,17 @@ C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\obj\D
 C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.dll
 C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.pdb
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\KorisnikService_Data.dll
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\KorisnikService_Data.pdb
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.csproj.AssemblyReference.cache
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.csproj.CoreCompileInputs.cache
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\Korisnik.977445ED.Up2Date
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.dll
+C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.pdb

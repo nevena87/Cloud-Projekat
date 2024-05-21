@@ -25,10 +25,10 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\rcf\Debug\RedditServiceContent\" />
+        <SourceDirectory path="C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\Cloud\rcf\Debug\RedditServiceContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\ecf\RedditServiceContent\" />
+        <SourceDirectory path="C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\Cloud\ecf\RedditServiceContent\" />
       </Content>
     </Contents>
     <Imports>
@@ -51,10 +51,10 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\rcf\Debug\HealthStatusServiceContent\" />
+        <SourceDirectory path="C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\Cloud\rcf\Debug\HealthStatusServiceContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\ecf\HealthStatusServiceContent\" />
+        <SourceDirectory path="C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\Cloud\ecf\HealthStatusServiceContent\" />
       </Content>
     </Contents>
     <Imports>
@@ -67,10 +67,10 @@
     </ConfigurationSettings>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\rcf\Debug\HealthMonitoringServiceContent\" />
+        <SourceDirectory path="C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\Cloud\rcf\Debug\HealthMonitoringServiceContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\ecf\HealthMonitoringServiceContent\" />
+        <SourceDirectory path="C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\Cloud\ecf\HealthMonitoringServiceContent\" />
       </Content>
     </Contents>
     <Imports>
@@ -83,10 +83,10 @@
     </ConfigurationSettings>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\rcf\Debug\NotificationServiceContent\" />
+        <SourceDirectory path="C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\Cloud\rcf\Debug\NotificationServiceContent\" />
       </Content>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\Lenovo\Desktop\Projekat\Cloud-Projekat\Cloud\Cloud\ecf\NotificationServiceContent\" />
+        <SourceDirectory path="C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\Cloud\ecf\NotificationServiceContent\" />
       </Content>
     </Contents>
     <Imports>
