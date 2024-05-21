@@ -15,7 +15,7 @@ namespace KorisnikService_Data
 
         public PretplataRepository()
         {
-            string connectionString = "";
+            string connectionString = "DefaultEndpointsProtocol=https;AccountName=amdemostorage001;AccountKey=pF4stKY0yQ8/0uIUvt0qL4l5HLVfph1sEw8FnoBxYOdXGv/94QkN+FTlPmwXtdYI6Pzf7bjwWNZf+AStFiLqbQ==;EndpointSuffix=core.windows.net";
             _storageAccount = CloudStorageAccount.Parse(connectionString);
             CloudTableClient tableClient = _storageAccount.CreateCloudTableClient();
             _table = tableClient.GetTableReference("pretplate");
