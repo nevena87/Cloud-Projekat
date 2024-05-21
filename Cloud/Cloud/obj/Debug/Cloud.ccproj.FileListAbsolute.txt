@@ -164,3 +164,10 @@ D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\obj\Debug\NotificationService\MonAgen
 D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\obj\Debug\NotificationService\NotificationService.dll
 D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\obj\Debug\NotificationService\NotificationService.dll.config
 D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\obj\Debug\NotificationService\NotificationService.pdb
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\obj\Debug\RedditService\bin\KorisnikService_Data.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\obj\Debug\RedditService\bin\KorisnikService_Data.pdb
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\obj\Debug\RedditService\bin\Microsoft.Azure.KeyVault.Core.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\obj\Debug\RedditService\bin\Microsoft.Azure.KeyVault.Core.xml
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\obj\Debug\RedditService\bin\Microsoft.WindowsAzure.Storage.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\obj\Debug\RedditService\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\Cloud\obj\Debug\RedditService\bin\Microsoft.WindowsAzure.Storage.xml

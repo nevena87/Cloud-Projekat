@@ -1,0 +1,14 @@
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\KorisnikService_Data.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\KorisnikService_Data.pdb
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Newtonsoft.Json.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Newtonsoft.Json.xml
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.csproj.AssemblyReference.cache
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.csproj.CoreCompileInputs.cache
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.csproj.CopyComplete
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.pdb

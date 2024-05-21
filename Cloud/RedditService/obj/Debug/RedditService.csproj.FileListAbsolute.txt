@@ -79,3 +79,10 @@ D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\RedditService\obj\Debug\RedditService.cspro
 D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\RedditService\obj\Debug\RedditService.csproj.CopyComplete
 D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\RedditService\obj\Debug\RedditService.dll
 D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\RedditService\obj\Debug\RedditService.pdb
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\RedditService\bin\KorisnikService_Data.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\RedditService\bin\Microsoft.Azure.KeyVault.Core.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\RedditService\bin\Microsoft.WindowsAzure.Storage.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\RedditService\bin\KorisnikService_Data.pdb
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\RedditService\bin\Microsoft.Azure.KeyVault.Core.xml
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\RedditService\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\RedditService\bin\Microsoft.WindowsAzure.Storage.xml
