@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Queue;
 using Microsoft.WindowsAzure.Storage.Table;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace KorisnikService_Data
     {
         private CloudStorageAccount _storageAccount;
         private CloudTable _table;
+        private CloudQueue _queue;
 
         public KomentarRepository()
         {
@@ -20,6 +22,10 @@ namespace KorisnikService_Data
             _storageAccount = CloudStorageAccount.Parse(connectionString);
             CloudTableClient tableClient = _storageAccount.CreateCloudTableClient();
             _table = tableClient.GetTableReference("komentari");
+
+            CloudQueueClient queueClient = _storageAccount.CreateCloudQueueClient();
+            _queue = queueClient.GetQueueReference("notifications");
+            _queue.CreateIfNotExists();
         }
 
         public void AddKomentar(Komentar komentar)
@@ -31,6 +37,10 @@ namespace KorisnikService_Data
            
             TableOperation insertOperation = TableOperation.Insert(komentar);
             _table.Execute(insertOperation);
+
+            string komentarId = komentar.RowKey;
+            CloudQueueMessage message = new CloudQueueMessage(komentarId);
+            _queue.AddMessage(message);
         }
 
         public void DeleteKomentar(string partitionKey, string rowKey)
@@ -45,6 +55,19 @@ namespace KorisnikService_Data
             {
                 TableOperation deleteOperation = TableOperation.Delete(komentar);
                 _table.Execute(deleteOperation);
+                DeleteMessageFromQueue(rowKey);
+            }
+        }
+
+        private void DeleteMessageFromQueue(string komentarId)
+        {
+            foreach (CloudQueueMessage message in _queue.GetMessages(32, TimeSpan.FromSeconds(10)))
+            {
+                if (message.AsString == komentarId)
+                {
+                    _queue.DeleteMessage(message);
+                    break;
+                }
             }
         }
 
