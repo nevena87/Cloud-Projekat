@@ -1,0 +1,10 @@
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\HealthMonitoringService\bin\Debug\HealthMonitoringService.dll.config
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\HealthMonitoringService\bin\Debug\HealthMonitoringService.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\HealthMonitoringService\bin\Debug\HealthMonitoringService.pdb
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\HealthMonitoringService\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\HealthMonitoringService\bin\Debug\MonAgentListener.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\HealthMonitoringService\obj\Debug\HealthMonitoringService.csproj.AssemblyReference.cache
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\HealthMonitoringService\obj\Debug\HealthMonitoringService.csproj.CoreCompileInputs.cache
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\HealthMonitoringService\obj\Debug\HealthMonitoringService.csproj.CopyComplete
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\HealthMonitoringService\obj\Debug\HealthMonitoringService.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\HealthMonitoringService\obj\Debug\HealthMonitoringService.pdb

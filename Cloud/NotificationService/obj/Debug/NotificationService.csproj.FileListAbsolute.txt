@@ -1,0 +1,10 @@
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\NotificationService\bin\Debug\NotificationService.dll.config
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\NotificationService\bin\Debug\NotificationService.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\NotificationService\bin\Debug\NotificationService.pdb
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\NotificationService\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\NotificationService\bin\Debug\MonAgentListener.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\NotificationService\obj\Debug\NotificationService.csproj.AssemblyReference.cache
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\NotificationService\obj\Debug\NotificationService.csproj.CoreCompileInputs.cache
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\NotificationService\obj\Debug\NotificationService.csproj.CopyComplete
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\NotificationService\obj\Debug\NotificationService.dll
+D:\CLOUD-REDDIT\Cloud-Projekat\Cloud\NotificationService\obj\Debug\NotificationService.pdb
