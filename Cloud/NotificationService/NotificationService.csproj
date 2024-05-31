@@ -85,6 +85,12 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KorisnikService_Data\KorisnikService_Data.csproj">
+      <Project>{3b5e58a4-49e6-4c83-a7c7-2358cce522ae}</Project>
+      <Name>KorisnikService_Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

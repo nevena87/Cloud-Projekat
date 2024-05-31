@@ -1,0 +1,44 @@
+﻿@{ Layout = null; }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Status</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <br /><br /><br />
+                <h2>Uptime in last hour</h2>
+                <br />
+                <center>
+                    <h1 style="font-size: 50px; margin-bottom: 20px">
+                        <span class="@ViewBag.uptimeClass" style="background: white !important">@ViewBag.uptime%</span>
+                    </h1>
+                    <div class="progress">
+                        <div class="progress-bar @ViewBag.uptimeClass" role="progressbar" style="width: @ViewBag.uptimePercentage;" aria-valuenow="@ViewBag.uptime" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="col-md-6">
+                <br />
+                <br />
+                <br />
+                <h2>Uptime in last 24 hours</h2>
+                <br />
+                <div class="d-flex flex-wrap">
+                    @foreach (var stat in ViewBag.stats)
+                    {
+                        <div class="square @if (stat) { <text>active</text> } else { <text>inactive</text> } "></div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
