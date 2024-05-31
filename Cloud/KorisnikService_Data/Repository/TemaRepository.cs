@@ -1,12 +1,11 @@
 ﻿using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
+using Microsoft.WindowsAzure.Storage.Shared.Protocol;
 using Microsoft.WindowsAzure.Storage.Table;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 
 namespace KorisnikService_Data
@@ -19,13 +18,14 @@ namespace KorisnikService_Data
 
         public TemaRepository()
         {
-            string connectionString = "DefaultEndpointsProtocol=https;AccountName=amdemostorage001;AccountKey=pF4stKY0yQ8/0uIUvt0qL4l5HLVfph1sEw8FnoBxYOdXGv/94QkN+FTlPmwXtdYI6Pzf7bjwWNZf+AStFiLqbQ==;EndpointSuffix=core.windows.net";
-            _storageAccount = CloudStorageAccount.Parse(connectionString);
+            _storageAccount = CloudStorageAccount.Parse("UseDevelopmentStorage=true");
             CloudTableClient tableClient = _storageAccount.CreateCloudTableClient();
             _table = tableClient.GetTableReference("teme");
+            _table.CreateIfNotExists();
             CloudBlobClient blobClient = _storageAccount.CreateCloudBlobClient();
             _blobContainer = blobClient.GetContainerReference("slike");
             _blobContainer.CreateIfNotExists();
+            EnableCors(_blobContainer);
         }
 
         public void AddTema(Tema tema, HttpPostedFileBase imageFile)
@@ -35,12 +35,15 @@ namespace KorisnikService_Data
 
             if (imageFile != null && imageFile.ContentLength > 0)
             {
-               
-                string imageName = Path.GetFileName(imageFile.FileName);
+                string imageName = $"{Guid.NewGuid()}{Path.GetExtension(imageFile.FileName)}";
                 CloudBlockBlob blockBlob = _blobContainer.GetBlockBlobReference(imageName);
-                blockBlob.UploadFromStream(imageFile.InputStream);
+                blockBlob.Properties.ContentType = imageFile.ContentType;
 
-               
+                using (var stream = imageFile.InputStream)
+                {
+                    blockBlob.UploadFromStream(stream);
+                }
+
                 tema.SlikaUrl = blockBlob.Uri.ToString();
             }
 
@@ -58,6 +61,26 @@ namespace KorisnikService_Data
             {
                 TableOperation deleteOperation = TableOperation.Delete(tema);
                 _table.Execute(deleteOperation);
+
+                // brisanje komentara povezanih na temu
+                KomentarRepository komentar = new KomentarRepository();
+
+                var povezani_komentari = komentar.GetAllKomentari().Where(k => k.TemaId == rowKey); // samo povezani komenatari
+
+                foreach (Komentar k in povezani_komentari)
+                {
+                    komentar.DeleteKomentar(k.PartitionKey, k.RowKey);
+                }
+
+                // brisanje pretplata za temu koja se brise
+                PretplataRepository pretplataRepository = new PretplataRepository();
+
+                var pretplate = pretplataRepository.GetPretplateByTemaId(rowKey).ToList();
+
+                foreach (Pretplata p in pretplate)
+                {
+                    pretplataRepository.DeletePretplata(p.UserEmail, p.TemaId);
+                }
             }
         }
 
@@ -87,6 +110,8 @@ namespace KorisnikService_Data
                 existingTema.Upvotes = tema.Upvotes;
                 existingTema.Downvotes = tema.Downvotes;
                 existingTema.UserEmail = tema.UserEmail;
+                existingTema.EmailKorisnikaUpvote = tema.EmailKorisnikaUpvote;
+                existingTema.EmailKorisnikaDownvote = tema.EmailKorisnikaDownvote;
 
                 TableOperation updateOperation = TableOperation.Replace(existingTema);
                 _table.Execute(updateOperation);
@@ -98,6 +123,27 @@ namespace KorisnikService_Data
             var filter = TableQuery.GenerateFilterCondition("UserEmail", QueryComparisons.Equal, userEmail);
             TableQuery<Tema> query = new TableQuery<Tema>().Where(filter);
             return _table.ExecuteQuery(query);
+        }
+
+        private static void EnableCors(CloudBlobContainer container)
+        {
+            var permissions = new BlobContainerPermissions
+            {
+                PublicAccess = BlobContainerPublicAccessType.Container
+            };
+            container.SetPermissions(permissions);
+
+            var serviceProperties = container.ServiceClient.GetServiceProperties();
+            serviceProperties.Cors.CorsRules.Clear();
+            serviceProperties.Cors.CorsRules.Add(new CorsRule
+            {
+                AllowedOrigins = new[] { "*" },
+                AllowedMethods = CorsHttpMethods.Get | CorsHttpMethods.Post | CorsHttpMethods.Put,
+                AllowedHeaders = new[] { "*" },
+                ExposedHeaders = new[] { "*" },
+                MaxAgeInSeconds = 3600
+            });
+            container.ServiceClient.SetServiceProperties(serviceProperties);
         }
     }
 }

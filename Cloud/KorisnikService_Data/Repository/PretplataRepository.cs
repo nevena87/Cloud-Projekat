@@ -1,10 +1,6 @@
 ﻿using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KorisnikService_Data
 {
@@ -15,10 +11,10 @@ namespace KorisnikService_Data
 
         public PretplataRepository()
         {
-            string connectionString = "DefaultEndpointsProtocol=https;AccountName=amdemostorage001;AccountKey=pF4stKY0yQ8/0uIUvt0qL4l5HLVfph1sEw8FnoBxYOdXGv/94QkN+FTlPmwXtdYI6Pzf7bjwWNZf+AStFiLqbQ==;EndpointSuffix=core.windows.net";
-            _storageAccount = CloudStorageAccount.Parse(connectionString);
+            _storageAccount = CloudStorageAccount.Parse("UseDevelopmentStorage=true");
             CloudTableClient tableClient = _storageAccount.CreateCloudTableClient();
             _table = tableClient.GetTableReference("pretplate");
+            _table.CreateIfNotExists();
         }
 
         public void AddPretplata(Pretplata pretplata)
@@ -29,7 +25,7 @@ namespace KorisnikService_Data
 
         public void DeletePretplata(string userEmail, string temaId)
         {
-            
+
             var retrieveOperation = TableOperation.Retrieve<Pretplata>(userEmail, temaId);
             var retrievedResult = _table.Execute(retrieveOperation);
             Pretplata pretplata = (Pretplata)retrievedResult.Result;
@@ -44,6 +40,13 @@ namespace KorisnikService_Data
         public IEnumerable<Pretplata> GetPretplateByUserEmail(string userEmail)
         {
             var filter = TableQuery.GenerateFilterCondition("PartitionKey", QueryComparisons.Equal, userEmail);
+            TableQuery<Pretplata> query = new TableQuery<Pretplata>().Where(filter);
+            return _table.ExecuteQuery(query);
+        }
+
+        public IEnumerable<Pretplata> GetPretplateByTemaId(string tema_id)
+        {
+            var filter = TableQuery.GenerateFilterCondition("TemaId", QueryComparisons.Equal, tema_id);
             TableQuery<Pretplata> query = new TableQuery<Pretplata>().Where(filter);
             return _table.ExecuteQuery(query);
         }
