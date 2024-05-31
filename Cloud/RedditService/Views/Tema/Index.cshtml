@@ -9,259 +9,13 @@
 <html>
 <head>
     <title>@ViewBag.Title</title>
-    <style>
-        body {
-            background-image: url('../../Pictures/rd.jpg');
-            background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
-            color: white;
-            padding-top: 50px;
-            margin: 0;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            display: flex;
-            justify-content: flex-end;
-            padding: 0 20px;
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-
-        .profile-icon {
-            border-radius: 50%;
-            cursor: pointer;
-            width: 50px;
-            height: 50px;
-            margin-left: 10px;
-            border: 2px solid white;
-            transition: transform 0.3s;
-        }
-
-            .profile-icon:hover {
-                transform: scale(1.1);
-            }
-
-        .form-container {
-            width: 350px;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            position: fixed;
-            top: 100px;
-            right: 20px;
-            display: none;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            color: white;
-            overflow-y: auto; /* Dodajemo skrol traku za vertikalno skrolovanje */
-            max-height: calc(85vh - 150px);
-        }
-
-            .form-container h2 {
-                text-align: center;
-                margin-bottom: 20px;
-                font-size: 24px;
-            }
-
-        input[type="text"],
-        input[type="password"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-
-        input[type="submit"],
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: darkslategray;
-            color: white;
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s;
-        }
-
-            input[type="submit"]:hover,
-            button:hover {
-                background-color: #0056b3;
-                transform: scale(1.05);
-            }
-
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 100px;
-            padding: 20px;
-        }
-
-        .card {
-            width: calc(30% - 100px); /* Smanjujemo širinu kartica */
-            margin: 10px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            color: black;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-            .card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            }
-
-            .card h2 {
-                margin-top: 0;
-                font-size: 22px;
-                margin-bottom: 10px;
-                text-align: center;
-            }
-
-            .card p {
-                flex-grow: 1;
-            }
-
-            .card span {
-                color: gray;
-                font-size: 14px;
-                margin-bottom: 10px;
-                display: block;
-            }
-
-        .vote-button {
-            padding: 10px;
-            background-color: darkslategray;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s;
-            margin-bottom: 5px;
-            text-align: center;
-        }
-
-            .vote-button:hover {
-                background-color: black;
-                transform: scale(1.05);
-            }
-
-        .comment {
-            list-style-type: none;
-            padding: 0;
-        }
-
-            .comment li {
-                background-color: rgba(0, 0, 0, 0.1);
-                padding: 10px;
-                border-radius: 5px;
-                margin-bottom: 5px;
-                display: flex;
-                justify-content: space-between;
-                color: white;
-            }
-
-        .search-sort-container {
-            margin: 20px;
-        }
-
-            .search-sort-container h2 {
-                margin-top: 0;
-            }
-
-            .search-sort-container form,
-            .search-sort-container a {
-                margin-bottom: 10px;
-                display: block;
-            }
-
-            .search-sort-container input[type="text"] {
-                width: calc(100% - 22px);
-                padding: 10px;
-                margin-bottom: 10px;
-                border: none;
-                border-radius: 5px;
-                background-color: rgba(255, 255, 255, 0.2);
-                color: white;
-                font-family: Arial, sans-serif;
-            }
-
-            .search-sort-container button {
-                padding: 10px;
-                background-color: darkslategray;
-                color: white;
-                text-decoration: none;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                transition: background-color 0.3s ease, transform 0.3s;
-            }
-
-                .search-sort-container button:hover {
-                    background-color: #0056b3;
-                    transform: scale(1.05);
-                }
-
-        .search-form button,
-        .sort-form button {
-            width: auto;
-            padding: 8px 16px;
-            background-color: darkslategray;
-            color: white;
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s;
-            margin-right: 10px;
-        }
-
-            .search-form button:hover,
-            .sort-form button:hover {
-                background-color: #0056b3;
-                transform: scale(1.05);
-            }
-
-        .search-form input[type="text"] {
-            width: calc(40% - 100px);
-            padding: 10px;
-            margin-bottom: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.2);
-            color: white;
-            font-family: Arial, sans-serif;
-            margin-right: 10px;
-        }
-
-        .sort-button {
-            width: 300px; /* Možete prilagoditi širinu prema vašim potrebama */
-            margin-right: 10px; /* Dodajemo razmak između dugmadi */
-        }
-    </style>
+    <link href="~/Content/Site.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <img src="~/Pictures/profile.jpg" alt="Profil" class="profile-icon" id="profileButton" />
         <img src="~/Pictures/add.jpeg" alt="Tema" class="profile-icon" id="novaTemaButton" />
+        <a href="@Url.Action("Logout")"><img src="~/Pictures/logout.png" style="background-color: white; width: 50px !important; width: 50px;" alt="Tema" class="profile-icon" id="logoutButton" /></a>
     </div>
 
     <!-- Forma za izmenu profila -->
@@ -319,25 +73,6 @@
             </div>
         }
     </div>
-    <script>
-    // Funkcija za prikaz slike korisnika
-    window.onload = function() {
-        // Prikazi trenutnu sliku kada se stranica učita
-        var currentImageSrc = "@Model.Signup.Slika";
-        var currentPreview = document.getElementById('currentPreview');
-        currentPreview.src = currentImageSrc;
-    }
-
-    // Funkcija za prikaz nove slike
-    function previewImage(event) {
-        var reader = new FileReader();
-        reader.onload = function () {
-            var output = document.getElementById('currentPreview');
-            output.src = reader.result;
-        }
-        reader.readAsDataURL(event.target.files[0]);
-    }
-    </script>
 
     <!-- Forma za dodavanje nove teme -->
     <div class="form-container" id="newTopicForm">
@@ -387,44 +122,13 @@
     </div>
 
     <!-- UserTeme -->
-    <div class="card-container">
+    <h1 style="margin-left: 50px">Moje teme</h1>
+
+    <div class="card-container" id="userTemeContainer">
+        <!-- UserTeme will be rendered here -->
         @if (Model.UserTeme != null && Model.UserTeme.Any())
         {
             foreach (var tema in Model.UserTeme)
-            {
-                <div class="card">
-                    @if (!string.IsNullOrEmpty(tema.SlikaUrl))
-                    {
-                        <img src="@tema.SlikaUrl" style="max-width: 100%;" />
-                    }
-                    <h2>@tema.Naslov</h2>
-                    <p>@tema.Sadrzaj</p>
-                    <span>Datum Kreiranja: @tema.DatumKreiranja.ToString("dd.MM.yyyy. HH:mm:ss")</span>
-                    <p>Upvotes: @tema.Upvotes</p>
-                    <p>Downvotes: @tema.Downvotes</p>
-
-                    <ul class="comment">
-                        @foreach (var komentar in tema.Komentari)
-                        {
-                            <li>
-                                @komentar.Tekst - @komentar.DatumKreiranja.ToString("dd.MM.yyyy. HH:mm:ss") - @komentar.KorisnikId
-                            </li>
-                        }
-                    </ul>
-                </div>
-            }
-        }
-        else
-        {
-            <p>Nemate kreiranih tema.</p>
-        }
-    </div>
-
-    <!-- Prikaz svih dodatih tema -->
-    @if (Model.Teme != null && Model.Teme.Any())
-    {
-        <div class="card-container">
-            @foreach (var tema in Model.Teme)
             {
                 <div class="card">
                     @if (!string.IsNullOrEmpty(tema.SlikaUrl))
@@ -494,12 +198,176 @@
                     </form>
                 </div>
             }
-        </div>
-    }
+
+        }
+        else
+        {
+            <p>Nemate kreiranih tema.</p>
+        }
+
+    </div>
+    <!-- Pagination controls -->
+    <div class="pagination">
+        <button style="max-width: 200px; margin-right: 20px" id="prevUserTeme">Prethodno</button>
+        <button style="max-width: 200px" id="nextUserTeme">Sledeće</button>
+    </div>
+
+    <!-- Prikaz svih dodatih tema -->
+    <h1 style="margin-left: 50px">Sve teme</h1>
+    <div class="card-container" id="temeContainer">
+        <!-- Teme will be rendered here -->
+        @if (Model.Teme != null && Model.Teme.Any())
+        {
+            foreach (var tema in Model.Teme)
+            {
+                <div class="card">
+                    @if (!string.IsNullOrEmpty(tema.SlikaUrl))
+                    {
+                        <img src="@tema.SlikaUrl" alt="Slika teme" style="max-width: 100%;" />
+                    }
+                    <h2>@tema.Naslov</h2>
+                    <p>@tema.Sadrzaj</p>
+                    <span>Datum kreiranja: @tema.DatumKreiranja.ToString("dd.MM.yyyy. HH:mm:ss")</span>
+                    <p>Upvotes: @tema.Upvotes</p>
+                    <p>Downvotes: @tema.Downvotes</p>
+                    <p>Kreirao/la: @tema.UserEmail</p>
+
+                    <form action="@Url.Action("Upvote", "Tema")" method="post">
+                        <input type="hidden" name="id" value="@tema.RowKey" />
+                        <button type="submit" class="vote-button">Upvote</button>
+                    </form>
+
+                    <form action="@Url.Action("Downvote", "Tema")" method="post">
+                        <input type="hidden" name="id" value="@tema.RowKey" />
+                        <button type="submit" class="vote-button">Downvote</button>
+                    </form>
+
+                    @if (Model.Pretplate.Any(p => p.TemaId == tema.RowKey))
+                    {
+                        <form action="/Tema/Unsubscribe" method="post">
+                            <input type="hidden" name="temaId" value="@tema.RowKey" />
+                            <button type="submit">Unsubscribe</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <form action="/Tema/Subscribe" method="post">
+                            <input type="hidden" name="temaId" value="@tema.RowKey" />
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    }
+
+                    <ul class="comment">
+                        @foreach (var komentar in tema.Komentari)
+                        {
+                            <li>
+                                @komentar.Tekst - @komentar.DatumKreiranja.ToString("dd.MM.yyyy. HH:mm:ss") - @komentar.KorisnikId
+                                <form action="@Url.Action("DeleteComment", "Tema")" method="post" style="display: inline;">
+                                    @Html.Hidden("komentarId", komentar.RowKey)
+                                    <button type="submit" style="background: none; border: none; color: red; cursor: pointer;">Obriši</button>
+                                </form>
+                            </li>
+                        }
+                    </ul>
+
+                    <form action="@Url.Action("Delete", "Tema")" method="post">
+                        @Html.Hidden("id", tema.RowKey)
+                        <button type="submit">Obriši temu</button>
+                    </form>
+
+                    <!-- Forma za dodavanje komentara -->
+                    <form action="@Url.Action("AddComment", "Tema")" method="post">
+                        @Html.Hidden("temaId", tema.RowKey)
+                        <div>
+                            <label for="komentarTekst">Tekst komentara:</label>
+                            <textarea name="komentarTekst" id="komentarTekst" required style="color:black"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Dodaj komentar</button>
+                        </div>
+                    </form>
+                </div>
+            }
+        }
+    </div>
+    <!-- Pagination controls -->
+    <div class="pagination" style="margin-bottom: 100px">
+        <button style="max-width: 200px; margin-right: 20px" id="prevTeme">Prethodno</button>
+        <button style="max-width: 200px" id="nextTeme">Sledeće</button>
+    </div>
 
 
 
-    <!-- JavaScript za prebacivanje između formi -->
+    <!-- JavaScript for pagination -->
+    <script>
+        var userTemePage = 0;
+        var temePage = 0;
+        var postsPerPage = 3;
+
+        function renderUserTeme() {
+            var userTemeCards = document.querySelectorAll('#userTemeContainer .card');
+            for (var i = 0; i < userTemeCards.length; i++) {
+                userTemeCards[i].style.display = 'none';
+            }
+
+            var startIndex = userTemePage * postsPerPage;
+            var endIndex = startIndex + postsPerPage;
+            for (var i = startIndex; i < endIndex; i++) {
+                if (userTemeCards[i]) {
+                    userTemeCards[i].style.display = 'block';
+                }
+            }
+        }
+
+        function renderTeme() {
+            var temeCards = document.querySelectorAll('#temeContainer .card');
+            for (var i = 0; i < temeCards.length; i++) {
+                temeCards[i].style.display = 'none';
+            }
+
+            var startIndex = temePage * postsPerPage;
+            var endIndex = startIndex + postsPerPage;
+            for (var i = startIndex; i < endIndex; i++) {
+                if (temeCards[i]) {
+                    temeCards[i].style.display = 'block';
+                }
+            }
+        }
+
+        document.getElementById('prevUserTeme').addEventListener('click', function() {
+            if (userTemePage > 0) {
+                userTemePage--;
+                renderUserTeme();
+            }
+        });
+
+        document.getElementById('nextUserTeme').addEventListener('click', function() {
+            if ((userTemePage + 1) * postsPerPage < @Model.UserTeme.Count) {
+                userTemePage++;
+                renderUserTeme();
+            }
+        });
+
+        document.getElementById('prevTeme').addEventListener('click', function() {
+            if (temePage > 0) {
+                temePage--;
+                renderTeme();
+            }
+        });
+
+        document.getElementById('nextTeme').addEventListener('click', function() {
+            if ((temePage + 1) * postsPerPage < @Model.Teme.Count) {
+                temePage++;
+                renderTeme();
+            }
+        });
+
+        // Initial rendering
+        renderUserTeme();
+        renderTeme();
+    </script>
+
+    <!-- JavaScript for switching between forms -->
     <script>
         document.getElementById("profileButton").addEventListener("click", function () {
             var form = document.getElementById("editProfileForm");
@@ -523,3 +391,4 @@
     </script>
 </body>
 </html>
+

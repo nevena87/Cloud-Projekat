@@ -1,7 +1,8 @@
 ﻿using KorisnikService_Data;
 using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -20,6 +21,16 @@ namespace RedditService.Controllers
             _temaRepository = new TemaRepository();
             _komentarRepository = new KomentarRepository();
             _pretplataRepository = new PretplataRepository();
+        }
+
+        // LOGOUT METODA
+        public ActionResult Logout()
+        {
+            // Ciscenje sesije
+            Session["UserID"] = null;
+            Session["UserEmail"] = null;
+            Session.Clear();
+            return RedirectToAction("Index", "Tema");
         }
 
         // GET: Index
@@ -81,7 +92,7 @@ namespace RedditService.Controllers
                     return HttpNotFound();
                 }
 
-             
+
                 model.Signup.PartitionKey = signupDetails.PartitionKey;
                 model.Signup.RowKey = signupDetails.RowKey;
 
@@ -89,7 +100,7 @@ namespace RedditService.Controllers
                 ViewBag.Message = "Profil je uspešno ažuriran.";
             }
 
-           
+
             var sveTeme = _temaRepository.GetAllTeme().ToList();
             var userTeme = _temaRepository.GetTemeByUserEmail(userEmail).ToList();
             foreach (var tema in sveTeme)
@@ -131,11 +142,11 @@ namespace RedditService.Controllers
                 _temaRepository.AddTema(tema, imageFile);
                 ViewBag.LastAddedTemaNaslov = tema.Naslov;
 
-                
+
                 var sveTeme = _temaRepository.GetAllTeme().ToList();
                 var userTeme = _temaRepository.GetTemeByUserEmail(userEmail).ToList();
 
-                
+
                 var model = new EditViewModel
                 {
                     Signup = signupDetails,
@@ -152,7 +163,7 @@ namespace RedditService.Controllers
         [HttpGet]
         public ActionResult Search(string searchTerm)
         {
-            
+
             var searchedTemes = _temaRepository.GetAllTeme().Where(t => t.Naslov.Contains(searchTerm)).ToList();
 
             foreach (var tema in searchedTemes)
@@ -162,7 +173,7 @@ namespace RedditService.Controllers
 
             var userEmail = Session["UserEmail"] as string;
             var signupDetails = _userRepository.RetrieveSignupByEmail(userEmail);
-            var userTeme = _temaRepository.GetTemeByUserEmail(userEmail).ToList();
+            var userTeme = _temaRepository.GetTemeByUserEmail(userEmail).Where(t => t.Naslov.Contains(searchTerm)).ToList();
 
             var model = new EditViewModel
             {
@@ -177,16 +188,19 @@ namespace RedditService.Controllers
         [HttpGet]
         public ActionResult Sort(string sortOrder)
         {
+            var userEmail = Session["UserEmail"] as string;
             var allTemes = _temaRepository.GetAllTeme().ToList();
+            var userTeme = _temaRepository.GetTemeByUserEmail(userEmail).ToList();
 
-            
             switch (sortOrder)
             {
                 case "naslov_asc":
                     allTemes = allTemes.OrderBy(t => t.Naslov).ToList();
+                    userTeme = userTeme.OrderBy(t => t.Naslov).ToList();
                     break;
                 case "naslov_desc":
                     allTemes = allTemes.OrderByDescending(t => t.Naslov).ToList();
+                    userTeme = userTeme.OrderByDescending(t => t.Naslov).ToList();
                     break;
                 default:
                     break;
@@ -197,9 +211,7 @@ namespace RedditService.Controllers
                 tema.Komentari = _komentarRepository.GetKomentariByTemaId(tema.RowKey).ToList();
             }
 
-            var userEmail = Session["UserEmail"] as string;
             var signupDetails = _userRepository.RetrieveSignupByEmail(userEmail);
-            var userTeme = _temaRepository.GetTemeByUserEmail(userEmail).ToList();
 
             var model = new EditViewModel
             {
@@ -218,10 +230,28 @@ namespace RedditService.Controllers
             var signupDetails = _userRepository.RetrieveSignupByEmail(userEmail);
 
             var tema = _temaRepository.GetTemaById(id);
+
+            //  ako je vec upvote temu ne dozvoliti mu da uradi ponovo upvote
+            if (tema.EmailKorisnikaUpvote.Contains(userEmail))
+            {
+                var model_prep = new EditViewModel
+                {
+                    Signup = signupDetails,
+                    Teme = _temaRepository.GetAllTeme().ToList(),
+                    UserTeme = _temaRepository.GetTemeByUserEmail(userEmail).ToList()
+                };
+                return RedirectToAction("Index", model_prep);
+            }
+
             if (tema != null)
             {
                 tema.Upvotes++; // Povećajte broj upvotova
-                _temaRepository.UpdateTema(tema); 
+
+                // dodaj korisnika u listu email koji su upvote
+                tema.EmailKorisnikaUpvote += userEmail + "|";
+
+                // azuriranje teme
+                _temaRepository.UpdateTema(tema);
             }
 
             var model = new EditViewModel
@@ -241,9 +271,26 @@ namespace RedditService.Controllers
             var signupDetails = _userRepository.RetrieveSignupByEmail(userEmail);
 
             var tema = _temaRepository.GetTemaById(id);
+
+            //  ako je vec downvote temu ne dozvoliti mu da uradi ponovo upvote
+            if (tema.EmailKorisnikaDownvote.Contains(userEmail))
+            {
+                var model_prep = new EditViewModel
+                {
+                    Signup = signupDetails,
+                    Teme = _temaRepository.GetAllTeme().ToList(),
+                    UserTeme = _temaRepository.GetTemeByUserEmail(userEmail).ToList()
+                };
+                return RedirectToAction("Index", model_prep);
+            }
+
             if (tema != null)
             {
                 tema.Downvotes++; // Povećajte broj downvotova
+
+                // dodaj korisnika u listu email koji su downvote
+                tema.EmailKorisnikaDownvote += userEmail + "|";
+
                 _temaRepository.UpdateTema(tema); // Ažuriranje
             }
 
@@ -285,7 +332,7 @@ namespace RedditService.Controllers
 
         // POST: AddComment
         [HttpPost]
-        public ActionResult AddComment(string temaId, string komentarTekst)
+        public async Task<ActionResult> AddComment(string temaId, string komentarTekst)
         {
             var userEmail = Session["UserEmail"] as string;
             if (string.IsNullOrEmpty(userEmail))
@@ -315,7 +362,7 @@ namespace RedditService.Controllers
             };
 
             // Dodavanje komentara u bazu podataka
-            _komentarRepository.AddKomentar(komentar);
+            await _komentarRepository.AddKomentar(komentar);
 
             // Ažuriranje modela sa novim listom komentara
             tema.Komentari = _komentarRepository.GetKomentariByTemaId(tema.RowKey).ToList();
@@ -329,6 +376,11 @@ namespace RedditService.Controllers
             };
 
             foreach (var t in model.Teme)
+            {
+                t.Komentari = _komentarRepository.GetKomentariByTemaId(t.RowKey).ToList();
+            }
+
+            foreach (var t in model.UserTeme)
             {
                 t.Komentari = _komentarRepository.GetKomentariByTemaId(t.RowKey).ToList();
             }
@@ -399,8 +451,8 @@ namespace RedditService.Controllers
                 return HttpNotFound();
             }
 
-           var pretplata = new Pretplata(userEmail, temaId);
-           _pretplataRepository.AddPretplata(pretplata);
+            var pretplata = new Pretplata(userEmail, temaId);
+            _pretplataRepository.AddPretplata(pretplata);
 
             return RedirectToAction("Index");
         }

@@ -1,5 +1,4 @@
-﻿
-using KorisnikService_Data;
+﻿using KorisnikService_Data;
 using KorisnikService_Data.Models;
 using KorisnikService_Data.Queues;
 using KorisnikService_Data.Repository;

@@ -1,9 +1,8 @@
-using Microsoft.WindowsAzure;
-using Microsoft.WindowsAzure.Diagnostics;
 using Microsoft.WindowsAzure.ServiceRuntime;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Diagnostics;
+using System.IO;
+using System.Net.Sockets;
+using System.Threading.Tasks;
 
 namespace RedditService
 {
@@ -11,10 +10,28 @@ namespace RedditService
     {
         public override bool OnStart()
         {
-            // For information on handling configuration changes
-            // see the MSDN topic at https://go.microsoft.com/fwlink/?LinkId=166357.
+            // Create internal endpoint to check health status
+            var internalEndpoint = RoleEnvironment.CurrentRoleInstance.InstanceEndpoints["health-monitoring-r"];
+            var internalListener = new TcpListener(internalEndpoint.IPEndpoint);
+            internalListener.Start();
+            Task.Run(() => ProccessRequests(internalListener));
+            Trace.TraceInformation("Notification Service has been started...");
 
             return base.OnStart();
+        }
+
+        private async Task ProccessRequests(TcpListener listener)
+        {
+            while (true)
+            {
+                var client = await listener.AcceptTcpClientAsync();
+                using (var writer = new StreamWriter(client.GetStream()))
+                {
+                    await writer.WriteLineAsync("alive");
+                    writer.Flush();
+                }
+                client.Close();
+            }
         }
     }
 }
