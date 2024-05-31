@@ -51,18 +51,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EditViewModel.cs" />
-    <Compile Include="Komentar.cs" />
-    <Compile Include="KomentarRepository.cs" />
-    <Compile Include="Login.cs" />
-    <Compile Include="LoginDataRepository.cs" />
-    <Compile Include="Pretplata.cs" />
-    <Compile Include="PretplataRepository.cs" />
+    <Compile Include="ViewModels\EditViewModel.cs" />
+    <Compile Include="Models\Administrator.cs" />
+    <Compile Include="Models\HealthCheckLog.cs" />
+    <Compile Include="Models\Komentar.cs" />
+    <Compile Include="Repository\AdministratorRepository.cs" />
+    <Compile Include="Repository\HealthCheckRepository.cs" />
+    <Compile Include="Repository\KomentarRepository.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Repository\LoginDataRepository.cs" />
+    <Compile Include="Models\Notification.cs" />
+    <Compile Include="Models\Pretplata.cs" />
+    <Compile Include="Repository\NotificationRepository.cs" />
+    <Compile Include="Repository\PretplataRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Signup.cs" />
-    <Compile Include="SignupDataRepository.cs" />
-    <Compile Include="Tema.cs" />
-    <Compile Include="TemaRepository.cs" />
+    <Compile Include="Models\Signup.cs" />
+    <Compile Include="Queues\CloudQueueHelper.cs" />
+    <Compile Include="Repository\SignupDataRepository.cs" />
+    <Compile Include="Models\Tema.cs" />
+    <Compile Include="Repository\TemaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
