@@ -1,13 +1,13 @@
-using Microsoft.WindowsAzure;
-using Microsoft.WindowsAzure.Diagnostics;
+using HealthMonitoringService.HealthCheck;
+using KorisnikService_Data;
+using KorisnikService_Data.Queues;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.WindowsAzure.ServiceRuntime;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using HealthStatus = KorisnikService_Data.HealthStatus;
 
 namespace HealthMonitoringService
 {
@@ -32,16 +32,10 @@ namespace HealthMonitoringService
 
         public override bool OnStart()
         {
-            // Set the maximum number of concurrent connections
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             ServicePointManager.DefaultConnectionLimit = 12;
-
-            // For information on handling configuration changes
-            // see the MSDN topic at https://go.microsoft.com/fwlink/?LinkId=166357.
-
             bool result = base.OnStart();
-
             Trace.TraceInformation("HealthMonitoringService has been started");
-
             return result;
         }
 
@@ -59,11 +53,27 @@ namespace HealthMonitoringService
 
         private async Task RunAsync(CancellationToken cancellationToken)
         {
-            // TODO: Replace the following with your own logic.
             while (!cancellationToken.IsCancellationRequested)
             {
-                Trace.TraceInformation("Working");
-                await Task.Delay(1000);
+                Trace.TraceInformation("Checking health...");
+
+                bool notification = await NotificationServiceHC.RunCheck();
+                bool reddit = await RedditHC.RunCheck();
+
+                HealthStatus status = new HealthStatus(reddit, notification);
+                await new HealthCheckRepository().InsertStatusAsync(status);
+
+                // Create a message for email
+                string emailBody = "";
+
+                if (!reddit) emailBody += "Reddit is offline.\n";
+                if (!notification) emailBody += "Notification is offline.\n";
+
+                // Add email into queue
+                _ = new CloudQueueHelper(); // singleton instance
+                if (emailBody != "") await CloudQueueHelper.AddToQueue(CloudQueueHelper.GetQueue("AdminNotificationQueue"), emailBody);
+
+                await Task.Delay(5000);
             }
         }
     }

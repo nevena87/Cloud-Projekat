@@ -53,7 +53,7 @@
   <ItemGroup>
     <Compile Include="ViewModels\EditViewModel.cs" />
     <Compile Include="Models\Administrator.cs" />
-    <Compile Include="Models\HealthCheckLog.cs" />
+    <Compile Include="Models\HealthStatus.cs" />
     <Compile Include="Models\Komentar.cs" />
     <Compile Include="Repository\AdministratorRepository.cs" />
     <Compile Include="Repository\HealthCheckRepository.cs" />
