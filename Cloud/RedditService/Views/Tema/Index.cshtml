@@ -15,7 +15,7 @@
     <div class="container">
         <img src="~/Pictures/profile.jpg" alt="Profil" class="profile-icon" id="profileButton" />
         <img src="~/Pictures/add.jpeg" alt="Tema" class="profile-icon" id="novaTemaButton" />
-        <a href="@Url.Action("Logout")"><img src="~/Pictures/logout.png" style="background-color: white; width: 50px !important; width: 50px;" alt="Tema" class="profile-icon" id="logoutButton" /></a>
+        <a href="@Url.Action("Logout")"><img src="~/Pictures/logout.jpg" style="background-color: white; width: 50px !important; width: 50px;" alt="Tema" class="profile-icon" id="logoutButton" /></a>
     </div>
 
     <!-- Forma za izmenu profila -->
@@ -133,7 +133,7 @@
                 <div class="card">
                     @if (!string.IsNullOrEmpty(tema.SlikaUrl))
                     {
-                        <img src="@tema.SlikaUrl" alt="Slika teme" style="max-width: 100%;" />
+                        <img src="@tema.SlikaUrl" alt="Slika teme" />
                     }
                     <h2>@tema.Naslov</h2>
                     <p>@tema.Sadrzaj</p>
@@ -142,12 +142,12 @@
                     <p>Downvotes: @tema.Downvotes</p>
                     <p>Kreirao/la: @tema.UserEmail</p>
 
-                    <form action="@Url.Action("Upvote", "Tema")" method="post">
+                    <form action="@Url.Action("Upvote", "Tema")" method="post" style="display: inline-block; margin-left: 100px;">
                         <input type="hidden" name="id" value="@tema.RowKey" />
                         <button type="submit" class="vote-button">Upvote</button>
                     </form>
 
-                    <form action="@Url.Action("Downvote", "Tema")" method="post">
+                    <form action="@Url.Action("Downvote", "Tema")" method="post" style="display: inline-block; margin-left: 20px;">
                         <input type="hidden" name="id" value="@tema.RowKey" />
                         <button type="submit" class="vote-button">Downvote</button>
                     </form>
@@ -232,12 +232,12 @@
                     <p>Downvotes: @tema.Downvotes</p>
                     <p>Kreirao/la: @tema.UserEmail</p>
 
-                    <form action="@Url.Action("Upvote", "Tema")" method="post">
+                    <form action="@Url.Action("Upvote", "Tema")" method="post" style="display: inline-block; margin-left: 100px;">
                         <input type="hidden" name="id" value="@tema.RowKey" />
                         <button type="submit" class="vote-button">Upvote</button>
                     </form>
 
-                    <form action="@Url.Action("Downvote", "Tema")" method="post">
+                    <form action="@Url.Action("Downvote", "Tema")" method="post" style="display: inline-block; margin-left: 20px;">
                         <input type="hidden" name="id" value="@tema.RowKey" />
                         <button type="submit" class="vote-button">Downvote</button>
                     </form>

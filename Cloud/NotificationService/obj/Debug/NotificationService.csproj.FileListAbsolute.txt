@@ -47,3 +47,4 @@ D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\NotificationService\obj\Debug\
 D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\NotificationService\obj\Debug\NotificationService.csproj.CopyComplete
 D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\NotificationService\obj\Debug\NotificationService.dll
 D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\NotificationService\obj\Debug\NotificationService.pdb
+C:\Users\Nevena\Downloads\cloud_projekat\Cloud-Projekat\Cloud\NotificationService\bin\Debug\Microsoft.WindowsAzure.Storage.xml

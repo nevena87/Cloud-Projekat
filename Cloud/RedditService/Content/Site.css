@@ -117,7 +117,7 @@ button {
     }
 
 .card-container {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px;
@@ -160,6 +160,13 @@ button {
         display: block;
     }
 
+    .card img {
+        width: 100%;
+        height: 300px; /* Postavite željenu visinu */
+        object-fit: cover; /* Osigurava da slika pokriva ceo kontejner uz očuvanje proporcija */
+        border-radius: 10px 10px 0 0; /* Opcionalno: zaokružite uglove slike */
+    }
+
 .vote-button {
     padding: 10px;
     background-color: darkslategray;
@@ -170,6 +177,29 @@ button {
     transition: background-color 0.3s ease, transform 0.3s;
     margin-bottom: 5px;
     text-align: center;
+}
+
+    .vote-button:hover {
+        background-color: black;
+        transform: scale(1.05);
+    }
+
+.vote-buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vote-button {
+    padding: 10px; /* Smanjili smo padding */
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%; /* Smanjili smo širinu dugmadi */
 }
 
     .vote-button:hover {

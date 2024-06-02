@@ -153,8 +153,13 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Pictures\add.jpeg" />
+    <Content Include="Pictures\leto.jpg" />
+    <Content Include="Pictures\logout.jpg" />
+    <Content Include="Pictures\nova_godina.jpg" />
     <Content Include="Pictures\profile.jpg" />
     <Content Include="Pictures\rd.jpg" />
+    <Content Include="Pictures\rodjendan.jpg" />
+    <Content Include="Pictures\sport.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
