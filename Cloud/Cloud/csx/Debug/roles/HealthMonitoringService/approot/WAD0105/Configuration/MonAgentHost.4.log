@@ -1,0 +1,1091 @@
+﻿Info  (2024-06-02T11:10:12Z): MonAgentHost.exe - Monitoring Agent Version 33.01.05 - Mar  8 2016 11:11:04 - (Milijana) amd64 - OS 6.2.9200
+Info  (2024-06-02T11:10:12Z): MonAgentHost.exe - Current agent working directory is 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\plugins\Diagnostics\Monitor\x64'
+Info  (2024-06-02T11:10:12Z): MonAgentHost.exe - Starting agent manager: 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\plugins\Diagnostics\Monitor\x64\MonAgentManager.exe -serviceShutdown MonAgentShutdownEvent.9652 -parent 9652 -deploymentdir "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\plugins\Diagnostics\Monitor\x64" -LocalPath "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105" -ConfigFile "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MaConfig.xml" "-ShutDownEvent" "WADDM-ShutDown-5cc6e6519db543a38fe26926cb4879f7" "-TotalShutDownEvent" "WADDM-TotalShutDown-5cc6e6519db543a38fe26926cb4879f7" "-InitializedEvent" "WADM-StartUp-5cc6e6519db543a38fe26926cb4879f7" "-events" "-wadVer1v5" "-UseProxyServer" "-XStoreAccounts" "WadAccount#true#devstoreaccount1#key==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000"  -LogPath "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MonAgentHost.4.log"'
+Info  (2024-06-02T11:10:12Z): MonAgentManager.exe - Monitoring Agent Version 33.01.05 - Mar  8 2016 11:12:47 - (Milijana) amd64 - OS 6.2.9200
+Info  (2024-06-02T11:10:12Z): MonAgentManager.exe - Agent will exit when WADDM-ShutDown-5cc6e6519db543a38fe26926cb4879f7 is signaled.
+Info  (2024-06-02T11:10:12Z): MonAgentManager.exe - Agent will exit when WADDM-TotalShutDown-5cc6e6519db543a38fe26926cb4879f7 is signaled.
+Info  (2024-06-02T11:10:12Z): MonAgentManager.exe - Table directory is 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Tables'
+Info  (2024-06-02T11:10:12Z): MonAgentManager.exe - Agent working directory is D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\plugins\Diagnostics\Monitor\x64; running from deployment directory
+Info  (2024-06-02T11:10:12Z): MonAgentManager.exe - Successfully parsed command line arguments.
+Info  (2024-06-02T11:10:12Z): MonAgentManager.exe - Actual command is :   -deploymentdir "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\plugins\Diagnostics\Monitor\x64" -LocalPath "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105"    -InitializedEvent "WADM-StartUp-5cc6e6519db543a38fe26926cb4879f7" -events -wadVer1v5 -UseProxyServer   -ConfigFile "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MaConfig.xml" -disableupdate -managerver 1  -parent 4404 -ShutDownEvent WADDM-ShutDown-5cc6e6519db543a38fe26926cb4879f79652 -TotalShutDownEvent WADDM-TotalShutDown-5cc6e6519db543a38fe26926cb4879f79652 
+Info  (2024-06-02T11:10:13Z): MonAgentManager.exe - Starting agent: 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\plugins\Diagnostics\Monitor\x64\AgentCore.exe   -deploymentdir "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\plugins\Diagnostics\Monitor\x64" -LocalPath "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105"    -InitializedEvent "WADM-StartUp-5cc6e6519db543a38fe26926cb4879f7" -events -wadVer1v5 -UseProxyServer   -ConfigFile "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MaConfig.xml" -disableupdate -managerver 1  -parent 4404 -ShutDownEvent WADDM-ShutDown-5cc6e6519db543a38fe26926cb4879f79652 -TotalShutDownEvent WADDM-TotalShutDown-5cc6e6519db543a38fe26926cb4879f79652 -xstoreaccounts "WadAccount#true#devstoreaccount1#key==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000"'
+Info  (2024-06-02T11:10:13Z): MonAgentManager.exe - Waiting for parent process 9652 of the host to terminate.
+Info  (2024-06-02T11:10:19Z): MonAgentManager.exe - Dumping MA error and warning events from D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
+Info  (2024-06-02T11:10:19Z): MonAgentManager.exe - MA is running with original configuration file 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MaConfig.xml'; this file is part of the role deployment
+Info  (2024-06-02T11:10:19Z): MonAgentManager.exe - The configuration identity is 'WADVer0v0'
+Info  (2024-06-02T11:10:19Z): MonAgentManager.exe - Identity for the MA session is 'WAD/deployment29(435)/HealthMonitoringService/deployment29(435).Cloud.HealthMonitoringService_IN_1'
+Info  (2024-06-02T11:10:19Z): MonAgentManager.exe - Node diagnostics is disabled in the config file. The on-demand request functionality is disabled
+Error (2024-06-02T11:10:19Z): EtwListener - MAEventTable: Level:1 ActivityId:f3ef3127-5c8f-4566-95a7-41fde92d502d MDRESULT:0x00000000 ErrorCode(4201):The instance name passed was not recognized as valid by a WMI data provider. Message:Error: ProcessTrace failure exceeded the limit(=3), exit event thread, sessionName=MA_ETWSESSION_WAD_deployment29_435__HealthMonitoringService_deployment29_435_.Cloud.HealthMonitoringService_IN_0
+If this persists it could mean that another MA is running with the same ETW session name.
+Info  (2024-06-02T11:10:24Z): MonAgentManager.exe - Received health config from MA: Cpu rate is 50% (hard limit); Memory limit is -1 MB (no restrictions); Working set limit is 2000 MB (no restrictions)
+Info  (2024-06-02T11:10:29Z): MonAgentManager.exe - Cpu rate for job is 50% and it is a hard limit (Agent may run slower to conform to the Cpu setting).
+Info  (2024-06-02T11:10:29Z): MonAgentManager.exe - Received health config from MA: Cpu rate is 50% (hard limit); Memory limit is -1 MB (no restrictions); Working set limit is 2000 MB (no restrictions)
+Info  (2024-06-02T11:10:31Z): MonAgentManager.exe - No working set limit for job set
+Info  (2024-06-02T11:10:34Z): MonAgentManager.exe - Received health config from MA: Cpu rate is 50% (hard limit); Memory limit is -1 MB (no restrictions); Working set limit is 2000 MB (no restrictions)
+Info  (2024-06-02T11:12:27Z): MonAgentManager.exe - Dumping MA error and warning events from D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
+Error (2024-06-02T11:12:28Z): SysCounterListener.dll - MAEventTable: Level:2 ActivityId:10e73d6c-97ef-46bc-998b-fcb3bf04c99c MDRESULT:0x00000000 ErrorCode(-1073738824): Message:PdhAddEnglishCounter(\Web Service(_Total)\ISAPI Extension Requests/sec) failed with PDH_CSTATUS_NO_OBJECT (0xC0000BB8)
+Error (2024-06-02T11:12:28Z): SysCounterListener.dll - MAEventTable: Level:2 ActivityId:10e73d6c-97ef-46bc-998b-fcb3bf04c99c MDRESULT:0x00000000 ErrorCode(-1073738824): Message:PdhAddEnglishCounter(\Web Service(_Total)\Bytes Total/Sec) failed with PDH_CSTATUS_NO_OBJECT (0xC0000BB8)
+Error (2024-06-02T11:12:28Z): SelfMonitoring - MAEventTable: Level:1 ActivityId:f134a73c-5cd9-47b0-bf14-9a73853d951f MDRESULT:0x80010007 ErrorCode(0): Message:Fatal error detected; shutting down the agent AgentCore#6
+Error (2024-06-02T11:12:28Z): NetTransport - MAEventTable: Level:2 ActivityId:31c1bf80-86d5-4720-a243-29dd9e0b95bf MDRESULT:0x00000000 ErrorCode(12002): Message:WinHttpReceiveResponse failed with ERROR_WINHTTP_TIMEOUT (12002)
+Error (2024-06-02T11:12:28Z): NetTransport - MAEventTable: Level:2 ActivityId:31c1bf80-86d5-4720-a243-29dd9e0b95bf MDRESULT:0x80050003 ErrorCode(0): Message:Failed to send bytes to XTable WADDiagnosticInfrastructureLogsTable due to network connection issues
+Error (2024-06-02T11:12:28Z): NetTransport - MAEventTable: Level:2 ActivityId:4f1eae0e-9d4a-4f35-b4d5-d6bd509f8fbf MDRESULT:0x8005001b ErrorCode(0): Message:After 1 retries, Failed to send out data(32 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 79685
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:10:16 GMT
+Content-ID: 1
+Content-Length: 2088
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:00.9678835Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">16508</d:Pid><d:Tid m:type="Edm.Int32">1732</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime sta
+Error (2024-06-02T11:12:29Z): NetTransport - MAEventTable: Level:2 ActivityId:4f1eae0e-9d4a-4f35-b4d5-d6bd509f8fbf MDRESULT:0x8005001b ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADDiagnosticInfrastructureLogsTable; partition key 0638529226200000000
+Error (2024-06-02T11:12:29Z): NetTransport - MAEventTable: Level:2 ActivityId:4f1eae0e-9d4a-4f35-b4d5-d6bd509f8fbf MDRESULT:0x8005001b ErrorCode(0): Message:Fail to finalize the XTableConnection object
+Error (2024-06-02T11:12:29Z): Tasks - MAEventTable: Level:2 ActivityId:4f1eae0e-9d4a-4f35-b4d5-d6bd509f8fbf MDRESULT:0x8005001b ErrorCode(0): Message:INetTransport1::CloseChannel(DiagnosticInfrastructureLogsTableQuery_DiagnosticInfrastructureLogsTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-02T11:12:29Z): NetTransport - MAEventTable: Level:2 ActivityId:31c1bf80-86d5-4720-a243-29dd9e0b95bf MDRESULT:0x8005001b ErrorCode(0): Message:After 1 retries, Failed to send out data(47 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 116730
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:10:16 GMT
+Content-ID: 1
+Content-Length: 1823
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:13.6230000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">27032</d:Pid><d:Tid m:type="Edm.Int32">27976</d:Tid><d:ActivityId m:type="Edm.String">7ad192e1-53ce-4f4f-a774-f8e3390d35e4</d:ActivityId><d:Function m:type="Edm.String">XTableConnectionBatchObject::SendBytesRequestAndGetHttpStatus</d:Function><d:Line m:type="Edm.Int32">2462</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">12002</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">WinHttpReceiveResponse failed with ERROR_WINHTTP_TIMEOUT (12002)</d:Messa
+Error (2024-06-02T11:12:29Z): Tasks - MAEventTable: Level:2 ActivityId:31c1bf80-86d5-4720-a243-29dd9e0b95bf MDRESULT:0x8005001b ErrorCode(0): Message:INetTransport1::CloseChannel(MAEventTableDiagnosticInfrastructureLogsTableQuery_MAEventTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-02T11:12:29Z): TmlTableManager - MAEventTable: Level:1 ActivityId:a07ef65c-ebb5-41cc-a567-bbc3152640f7 MDRESULT:0x80010007 ErrorCode(0): Message:Exception handled in table manager callback; stopping table management
+Info  (2024-06-02T11:12:29Z): MonAgentManager.exe - MA is running with original configuration file 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MaConfig.xml'; this file is part of the role deployment
+Info  (2024-06-02T11:12:29Z): MonAgentManager.exe - The configuration identity is 'WADVer0v0'
+Info  (2024-06-02T11:12:29Z): MonAgentManager.exe - Identity for the MA session is 'WAD/deployment29(435)/HealthMonitoringService/deployment29(435).Cloud.HealthMonitoringService_IN_0'
+Error (2024-06-02T11:12:29Z): EtwListener - MAEventTable: Level:1 ActivityId:6d22e4d1-6cf2-431e-921e-5aa721987c3c MDRESULT:0x00000000 ErrorCode(4201):The instance name passed was not recognized as valid by a WMI data provider. Message:Error: ProcessTrace failure exceeded the limit(=3), exit event thread, sessionName=MA_ETWSESSION_WAD_deployment29_435__HealthMonitoringService_deployment29_435_.Cloud.HealthMonitoringService_IN_1
+If this persists it could mean that another MA is running with the same ETW session name.
+Info  (2024-06-02T11:12:29Z): MonAgentManager.exe - Node diagnostics is disabled in the config file. The on-demand request functionality is disabled
+Error (2024-06-02T11:12:29Z): NetTransport - MAEventTable: Level:2 ActivityId:1b74c63f-18f4-482c-ae23-74eb97ee485c MDRESULT:0x80010008 ErrorCode(0): Message:Request #1 failed in the batch request with status code 500
+Error (2024-06-02T11:12:29Z): NetTransport - MAEventTable: Level:2 ActivityId:1b74c63f-18f4-482c-ae23-74eb97ee485c MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_c233d9bd-1041-406b-9a4a-9a5e653b7fc2
+Content-Type: multipart/mixed; boundary=changesetresponse_4f43e300-29f5-45c0-a4c4-1a15f89d2e8a
+
+--changesetresponse_4f43e300-29f5-45c0-a4c4-1a15f89d2e8a
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 47
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:f88a2fb5-12d2-4096-b0d6-4c6cb24fb01e
+Time:2024-06-02T11:11:24.7198148Z</message></error>
+--changesetresponse_4f43e300-29f5-45c0-a4c4-1a15f89d2e8a--
+--batchresponse_c233d9bd-1041-406b-9a4a-9a5e653b7fc2--
+.
+Error (2024-06-02T11:12:29Z): NetTransport - MAEventTable: Level:2 ActivityId:1b74c63f-18f4-482c-ae23-74eb97ee485c MDRESULT:0x80010008 ErrorCode(0): Message:Failed to send bytes to XTable WADDiagnosticInfrastructureLogsTable as Xstore rejected the request
+Error (2024-06-02T11:12:29Z): NetTransport - MAEventTable: Level:2 ActivityId:1b74c63f-18f4-482c-ae23-74eb97ee485c MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(47 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 116730
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:10:53 GMT
+Content-ID: 1
+Content-Length: 1823
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:13.6230000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_1</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">27032</d:Pid><d:Tid m:type="Edm.Int32">27976</d:Tid><d:ActivityId m:type="Edm.String">7ad192e1-53ce-4f4f-a774-f8e3390d35e4</d:ActivityId><d:Function m:type="Edm.String">XTableConnectionBatchObject::SendBytesRequestAndGetHttpStatus</d:Function><d:Line m:type="Edm.Int32">2462</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">12002</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">WinHttpReceiveResponse failed with ERROR_WINHTTP_TIMEOUT (12002)</d:Messa
+Error (2024-06-02T11:12:30Z): NetTransport - MAEventTable: Level:2 ActivityId:1b74c63f-18f4-482c-ae23-74eb97ee485c MDRESULT:0x80050002 ErrorCode(0): Message:Failed to close channel: datasite = XTableWadAccount
+Error (2024-06-02T11:12:30Z): NetTransport - MAEventTable: Level:2 ActivityId:e1c86e7f-f0c2-46d0-8d57-aee659568e23 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_76d4f874-fdd2-4727-968a-fb4c63aa1c57
+Content-Type: multipart/mixed; boundary=changesetresponse_929923fd-64a6-406e-8081-57dd5943fa24
+
+--changesetresponse_929923fd-64a6-406e-8081-57dd5943fa24
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 32
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:ceccdfd4-ef2d-4bc5-be12-b0391932842a
+Time:2024-06-02T11:11:25.0257217Z</message></error>
+--changesetresponse_929923fd-64a6-406e-8081-57dd5943fa24--
+--batchresponse_76d4f874-fdd2-4727-968a-fb4c63aa1c57--
+.
+Error (2024-06-02T11:12:33Z): NetTransport - MAEventTable: Level:2 ActivityId:e1c86e7f-f0c2-46d0-8d57-aee659568e23 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(32 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 79685
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:10:53 GMT
+Content-ID: 1
+Content-Length: 2088
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:00.9678835Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_1</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">16508</d:Pid><d:Tid m:type="Edm.Int32">1732</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime sta
+Error (2024-06-02T11:12:36Z): SelfMonitoring - MAEventTable: Level:1 ActivityId:1b74c63f-18f4-482c-ae23-74eb97ee485c MDRESULT:0x80010007 ErrorCode(0): Message:Fatal error detected; shutting down the agent AgentCore#5
+Error (2024-06-02T11:12:36Z): NetTransport - MAEventTable: Level:2 ActivityId:deca1624-4426-459c-ba24-0752a15204ab MDRESULT:0x80050003 ErrorCode(0): Message:Failed to send bytes to XTable WADWindowsEventLogsTable due to network connection issues
+Error (2024-06-02T11:12:36Z): NetTransport - MAEventTable: Level:2 ActivityId:deca1624-4426-459c-ba24-0752a15204ab MDRESULT:0x8005001b ErrorCode(0): Message:After 1 retries, Failed to send out data(56 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 184919
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADWindowsEventLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:10:59 GMT
+Content-ID: 1
+Content-Length: 3202
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:56:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:56:00.7500669Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_1</d:RoleInstance><d:ProviderGuid m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ProviderGuid><d:ProviderName m:type="Edm.String">AzureDiagnostics</d:ProviderName><d:EventId m:type="Edm.Int32">0</d:EventId><d:Level m:type="Edm.Int32">2</d:Level><d:Pid m:type="Edm.Int32">0</d:Pid><d:Tid m:type="Edm.Int32">0</d:Tid><d:Opcode m:type="Edm.Int32">0</d:Opcode><d:Task m:type="Edm.Int32">0</d:Task><d:Channel m:type="Edm.String">Application</d:Channel><d:Description m:type="Edm.String">Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tab
+Error (2024-06-02T11:12:42Z): NetTransport - MAEventTable: Level:2 ActivityId:deca1624-4426-459c-ba24-0752a15204ab MDRESULT:0x8005001b ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADWindowsEventLogsTable; partition key 0638529225600000000
+Error (2024-06-02T11:12:42Z): Tasks - MAEventTable: Level:2 ActivityId:deca1624-4426-459c-ba24-0752a15204ab MDRESULT:0x8005001b ErrorCode(0): Message:INetTransport1::CloseChannel(WindowsEventLogsTableQuery_WindowsEventLogsTable_WADWindowsEventLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-02T11:12:43Z): NetTransport - MAEventTable: Level:2 ActivityId:36b29a0d-2e7e-4824-be10-a32facf36df2 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_87178176-56d7-4570-8270-ec34fdd585b7
+Content-Type: multipart/mixed; boundary=changesetresponse_2589de21-d744-4f05-9378-b372cdc33dc2
+
+--changesetresponse_2589de21-d744-4f05-9378-b372cdc33dc2
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 32
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:42d3517b-45db-437d-898d-1db38451c553
+Time:2024-06-02T11:12:19.7025320Z</message></error>
+--changesetresponse_2589de21-d744-4f05-9378-b372cdc33dc2--
+--batchresponse_87178176-56d7-4570-8270-ec34fdd585b7--
+.
+Error (2024-06-02T11:12:59Z): NetTransport - MAEventTable: Level:2 ActivityId:36b29a0d-2e7e-4824-be10-a32facf36df2 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(32 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 79685
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:11:48 GMT
+Content-ID: 1
+Content-Length: 2088
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:00.9678835Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">16508</d:Pid><d:Tid m:type="Edm.Int32">1732</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime sta
+Error (2024-06-02T11:13:09Z): NetTransport - MAEventTable: Level:2 ActivityId:2d2461f9-3625-4d52-9b49-101fb4e4a4f2 MDRESULT:0x80050022 ErrorCode(0): Message:After 1 retries, Failed to send out data(56 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 184919
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADWindowsEventLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:11:48 GMT
+Content-ID: 1
+Content-Length: 3202
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:56:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:56:00.7500669Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:ProviderGuid m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ProviderGuid><d:ProviderName m:type="Edm.String">AzureDiagnostics</d:ProviderName><d:EventId m:type="Edm.Int32">0</d:EventId><d:Level m:type="Edm.Int32">2</d:Level><d:Pid m:type="Edm.Int32">0</d:Pid><d:Tid m:type="Edm.Int32">0</d:Tid><d:Opcode m:type="Edm.Int32">0</d:Opcode><d:Task m:type="Edm.Int32">0</d:Task><d:Channel m:type="Edm.String">Application</d:Channel><d:Description m:type="Edm.String">Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tab
+Info  (2024-06-02T11:13:15Z): MonAgentManager.exe - AgentCore has exited.
+Info  (2024-06-02T11:13:15Z): MonAgentManager.exe - Dumping MA error and warning events from D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
+Error (2024-06-02T11:13:15Z): NetTransport - MAEventTable: Level:2 ActivityId:5d0577a5-87a5-4f78-93d9-f2d274e6b197 MDRESULT:0x00000000 ErrorCode(12002): Message:WinHttpReceiveResponse failed with ERROR_WINHTTP_TIMEOUT (12002)
+Error (2024-06-02T11:13:16Z): NetTransport - MAEventTable: Level:2 ActivityId:5d0577a5-87a5-4f78-93d9-f2d274e6b197 MDRESULT:0x80050003 ErrorCode(0): Message:Failed to send bytes to XTable WADDiagnosticInfrastructureLogsTable due to network connection issues
+Error (2024-06-02T11:13:16Z): NetTransport - MAEventTable: Level:2 ActivityId:5d0577a5-87a5-4f78-93d9-f2d274e6b197 MDRESULT:0x80050022 ErrorCode(0): Message:After 1 retries, Failed to send out data(47 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 116730
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:11:59 GMT
+Content-ID: 1
+Content-Length: 1823
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:13.6230000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">27032</d:Pid><d:Tid m:type="Edm.Int32">27976</d:Tid><d:ActivityId m:type="Edm.String">7ad192e1-53ce-4f4f-a774-f8e3390d35e4</d:ActivityId><d:Function m:type="Edm.String">XTableConnectionBatchObject::SendBytesRequestAndGetHttpStatus</d:Function><d:Line m:type="Edm.Int32">2462</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">12002</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">WinHttpReceiveResponse failed with ERROR_WINHTTP_TIMEOUT (12002)</d:Messa
+Error (2024-06-02T11:13:21Z): NetTransport - MAEventTable: Level:2 ActivityId:5d0577a5-87a5-4f78-93d9-f2d274e6b197 MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADDiagnosticInfrastructureLogsTable; partition key 0638529226200000000
+Error (2024-06-02T11:13:22Z): NetTransport - MAEventTable: Level:2 ActivityId:5d0577a5-87a5-4f78-93d9-f2d274e6b197 MDRESULT:0x80050002 ErrorCode(0): Message:Fail to finalize the XTableConnection object
+Error (2024-06-02T11:13:23Z): NetTransport - MAEventTable: Level:2 ActivityId:5d0577a5-87a5-4f78-93d9-f2d274e6b197 MDRESULT:0x80050002 ErrorCode(0): Message:Failed to close channel: datasite = XTableWadAccount
+Error (2024-06-02T11:13:23Z): Tasks - MAEventTable: Level:2 ActivityId:5d0577a5-87a5-4f78-93d9-f2d274e6b197 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(MAEventTableDiagnosticInfrastructureLogsTableQuery_MAEventTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Info  (2024-06-02T11:13:29Z): MonAgentManager.exe - Starting agent: 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\plugins\Diagnostics\Monitor\x64\AgentCore.exe   -deploymentdir "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\plugins\Diagnostics\Monitor\x64" -LocalPath "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105"    -InitializedEvent "WADM-StartUp-5cc6e6519db543a38fe26926cb4879f7" -events -wadVer1v5 -UseProxyServer   -ConfigFile "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MaConfig.xml" -disableupdate -managerver 1  -parent 4404 -ShutDownEvent WADDM-ShutDown-5cc6e6519db543a38fe26926cb4879f79652 -TotalShutDownEvent WADDM-TotalShutDown-5cc6e6519db543a38fe26926cb4879f79652 -xstoreaccounts "WadAccount#true#devstoreaccount1#key==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000"'
+Info  (2024-06-02T11:13:37Z): MonAgentManager.exe - Dumping MA error and warning events from D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
+Info  (2024-06-02T11:13:41Z): MonAgentManager.exe - MA is running with original configuration file 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MaConfig.xml'; this file is part of the role deployment
+Info  (2024-06-02T11:13:42Z): MonAgentManager.exe - Received health config from MA: Cpu rate is 50% (hard limit); Memory limit is -1 MB (no restrictions); Working set limit is 2000 MB (no restrictions)
+Info  (2024-06-02T11:13:44Z): MonAgentManager.exe - The configuration identity is 'WADVer0v0'
+Info  (2024-06-02T11:13:47Z): MonAgentManager.exe - Cpu rate for job is 50% and it is a hard limit (Agent may run slower to conform to the Cpu setting).
+Info  (2024-06-02T11:13:47Z): MonAgentManager.exe - Received health config from MA: Cpu rate is 50% (hard limit); Memory limit is -1 MB (no restrictions); Working set limit is 2000 MB (no restrictions)
+Info  (2024-06-02T11:13:52Z): MonAgentManager.exe - Identity for the MA session is 'WAD/deployment29(435)/HealthMonitoringService/deployment29(435).Cloud.HealthMonitoringService_IN_1'
+Info  (2024-06-02T11:13:53Z): MonAgentManager.exe - Received health config from MA: Cpu rate is 50% (hard limit); Memory limit is -1 MB (no restrictions); Working set limit is 2000 MB (no restrictions)
+Info  (2024-06-02T11:13:54Z): MonAgentManager.exe - No working set limit for job set
+Error (2024-06-02T11:13:54Z): EtwListener - MAEventTable: Level:1 ActivityId:2bca0298-f81e-471b-8a94-fee25a858ecf MDRESULT:0x00000000 ErrorCode(4201):The instance name passed was not recognized as valid by a WMI data provider. Message:Error: ProcessTrace failure exceeded the limit(=3), exit event thread, sessionName=MA_ETWSESSION_WAD_deployment29_435__HealthMonitoringService_deployment29_435_.Cloud.HealthMonitoringService_IN_0
+If this persists it could mean that another MA is running with the same ETW session name.
+Info  (2024-06-02T11:13:55Z): MonAgentManager.exe - Node diagnostics is disabled in the config file. The on-demand request functionality is disabled
+Info  (2024-06-02T11:16:46Z): MonAgentManager.exe - Dumping MA error and warning events from D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
+Error (2024-06-02T11:16:49Z): SysCounterListener.dll - MAEventTable: Level:2 ActivityId:7c5169ab-1951-4bc2-89f6-d9e9a5e62eee MDRESULT:0x00000000 ErrorCode(-1073738824): Message:PdhAddEnglishCounter(\Web Service(_Total)\ISAPI Extension Requests/sec) failed with PDH_CSTATUS_NO_OBJECT (0xC0000BB8)
+Error (2024-06-02T11:16:52Z): SysCounterListener.dll - MAEventTable: Level:2 ActivityId:7c5169ab-1951-4bc2-89f6-d9e9a5e62eee MDRESULT:0x00000000 ErrorCode(-1073738824): Message:PdhAddEnglishCounter(\Web Service(_Total)\Bytes Total/Sec) failed with PDH_CSTATUS_NO_OBJECT (0xC0000BB8)
+Error (2024-06-02T11:16:52Z): SelfMonitoring - MAEventTable: Level:1 ActivityId:de475562-3668-48aa-bd90-2a64ecef02c4 MDRESULT:0x80010007 ErrorCode(0): Message:Fatal error detected; shutting down the agent AgentCore#4
+Error (2024-06-02T11:16:52Z): NetTransport - MAEventTable: Level:2 ActivityId:e94d6c32-9a86-42ce-877d-01c67bb906d6 MDRESULT:0x80010008 ErrorCode(0): Message:Request #1 failed in the batch request with status code 500
+Error (2024-06-02T11:16:52Z): NetTransport - MAEventTable: Level:2 ActivityId:e94d6c32-9a86-42ce-877d-01c67bb906d6 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_c89a1c8a-ddbe-425a-bf6a-19ec7516fa75
+Content-Type: multipart/mixed; boundary=changesetresponse_6e7f0f25-db62-4148-93cb-68d2bf2c419d
+
+--changesetresponse_6e7f0f25-db62-4148-93cb-68d2bf2c419d
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 32
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:d947f803-7596-4311-803c-3c15fe917796
+Time:2024-06-02T11:13:50.3131139Z</message></error>
+--changesetresponse_6e7f0f25-db62-4148-93cb-68d2bf2c419d--
+--batchresponse_c89a1c8a-ddbe-425a-bf6a-19ec7516fa75--
+.
+Error (2024-06-02T11:16:53Z): NetTransport - MAEventTable: Level:2 ActivityId:e94d6c32-9a86-42ce-877d-01c67bb906d6 MDRESULT:0x80010008 ErrorCode(0): Message:Failed to send bytes to XTable WADDiagnosticInfrastructureLogsTable as Xstore rejected the request
+Error (2024-06-02T11:16:53Z): NetTransport - MAEventTable: Level:2 ActivityId:e94d6c32-9a86-42ce-877d-01c67bb906d6 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(32 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 79685
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:13:19 GMT
+Content-ID: 1
+Content-Length: 2088
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:00.9678835Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">16508</d:Pid><d:Tid m:type="Edm.Int32">1732</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime sta
+Error (2024-06-02T11:16:54Z): NetTransport - MAEventTable: Level:2 ActivityId:e94d6c32-9a86-42ce-877d-01c67bb906d6 MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADDiagnosticInfrastructureLogsTable; partition key 0638529226200000000
+Error (2024-06-02T11:16:55Z): NetTransport - MAEventTable: Level:2 ActivityId:e94d6c32-9a86-42ce-877d-01c67bb906d6 MDRESULT:0x80050002 ErrorCode(0): Message:Fail to finalize the XTableConnection object
+Error (2024-06-02T11:16:55Z): NetTransport - MAEventTable: Level:2 ActivityId:e94d6c32-9a86-42ce-877d-01c67bb906d6 MDRESULT:0x80050002 ErrorCode(0): Message:Failed to close channel: datasite = XTableWadAccount
+Error (2024-06-02T11:16:55Z): Tasks - MAEventTable: Level:2 ActivityId:e94d6c32-9a86-42ce-877d-01c67bb906d6 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(DiagnosticInfrastructureLogsTableQuery_DiagnosticInfrastructureLogsTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-02T11:16:55Z): NetTransport - MAEventTable: Level:2 ActivityId:6beb6690-acce-4f25-af01-617def6f341f MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_e9eef1e8-d56a-4a9a-80b3-4d68615bd84e
+Content-Type: multipart/mixed; boundary=changesetresponse_69c37eba-9087-4cae-8a53-613b184dc881
+
+--changesetresponse_69c37eba-9087-4cae-8a53-613b184dc881
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 56
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:6ebc3895-5aa3-4843-9f95-76ec1d6526d8
+Time:2024-06-02T11:13:58.0304900Z</message></error>
+--changesetresponse_69c37eba-9087-4cae-8a53-613b184dc881--
+--batchresponse_e9eef1e8-d56a-4a9a-80b3-4d68615bd84e--
+.
+Error (2024-06-02T11:16:56Z): NetTransport - MAEventTable: Level:2 ActivityId:6beb6690-acce-4f25-af01-617def6f341f MDRESULT:0x80010008 ErrorCode(0): Message:Failed to send bytes to XTable WADWindowsEventLogsTable as Xstore rejected the request
+Error (2024-06-02T11:16:57Z): NetTransport - MAEventTable: Level:2 ActivityId:6beb6690-acce-4f25-af01-617def6f341f MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(56 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 184919
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADWindowsEventLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:13:27 GMT
+Content-ID: 1
+Content-Length: 3202
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:56:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:56:00.7500669Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:ProviderGuid m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ProviderGuid><d:ProviderName m:type="Edm.String">AzureDiagnostics</d:ProviderName><d:EventId m:type="Edm.Int32">0</d:EventId><d:Level m:type="Edm.Int32">2</d:Level><d:Pid m:type="Edm.Int32">0</d:Pid><d:Tid m:type="Edm.Int32">0</d:Tid><d:Opcode m:type="Edm.Int32">0</d:Opcode><d:Task m:type="Edm.Int32">0</d:Task><d:Channel m:type="Edm.String">Application</d:Channel><d:Description m:type="Edm.String">Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tab
+Error (2024-06-02T11:16:57Z): NetTransport - MAEventTable: Level:2 ActivityId:6beb6690-acce-4f25-af01-617def6f341f MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADWindowsEventLogsTable; partition key 0638529225600000000
+Error (2024-06-02T11:16:57Z): Tasks - MAEventTable: Level:2 ActivityId:6beb6690-acce-4f25-af01-617def6f341f MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(WindowsEventLogsTableQuery_WindowsEventLogsTable_WADWindowsEventLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-02T11:16:58Z): NetTransport - MAEventTable: Level:2 ActivityId:cdf53c0e-66eb-4aa7-bc9e-bda21d5ff856 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_6dcd9564-8f4a-49f7-9f4a-ee12f89b3084
+Content-Type: multipart/mixed; boundary=changesetresponse_d5ee9cc3-ed03-4d48-a772-5d92f972a708
+
+--changesetresponse_d5ee9cc3-ed03-4d48-a772-5d92f972a708
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 47
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:e3e69746-9319-4981-a30b-29b4558080be
+Time:2024-06-02T11:14:07.7794893Z</message></error>
+--changesetresponse_d5ee9cc3-ed03-4d48-a772-5d92f972a708--
+--batchresponse_6dcd9564-8f4a-49f7-9f4a-ee12f89b3084--
+.
+Error (2024-06-02T11:16:59Z): NetTransport - MAEventTable: Level:2 ActivityId:cdf53c0e-66eb-4aa7-bc9e-bda21d5ff856 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(47 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 116730
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:13:37 GMT
+Content-ID: 1
+Content-Length: 1823
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:13.6230000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">27032</d:Pid><d:Tid m:type="Edm.Int32">27976</d:Tid><d:ActivityId m:type="Edm.String">7ad192e1-53ce-4f4f-a774-f8e3390d35e4</d:ActivityId><d:Function m:type="Edm.String">XTableConnectionBatchObject::SendBytesRequestAndGetHttpStatus</d:Function><d:Line m:type="Edm.Int32">2462</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">12002</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">WinHttpReceiveResponse failed with ERROR_WINHTTP_TIMEOUT (12002)</d:Messa
+Error (2024-06-02T11:16:59Z): Tasks - MAEventTable: Level:2 ActivityId:cdf53c0e-66eb-4aa7-bc9e-bda21d5ff856 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(MAEventTableDiagnosticInfrastructureLogsTableQuery_MAEventTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-02T11:17:00Z): NetTransport - MAEventTable: Level:2 ActivityId:1014baa6-643c-4150-ba32-bbc8e29eb608 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_72a913e8-d1a0-49fd-b301-ffdf0979f48d
+Content-Type: multipart/mixed; boundary=changesetresponse_30944747-f276-4ed7-b77b-7f98ceba5e30
+
+--changesetresponse_30944747-f276-4ed7-b77b-7f98ceba5e30
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 47
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:cb2b02d3-d7d5-445e-b7f1-058b7aa31dac
+Time:2024-06-02T11:14:35.5564904Z</message></error>
+--changesetresponse_30944747-f276-4ed7-b77b-7f98ceba5e30--
+--batchresponse_72a913e8-d1a0-49fd-b301-ffdf0979f48d--
+.
+Error (2024-06-02T11:17:04Z): NetTransport - MAEventTable: Level:2 ActivityId:ba42b637-db5d-4857-a5cc-e72198cc1908 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_b292cd78-0ceb-431c-a0a3-d1cba9843686
+Content-Type: multipart/mixed; boundary=changesetresponse_adad935f-5409-45f8-aba8-b79f02da8a85
+
+--changesetresponse_adad935f-5409-45f8-aba8-b79f02da8a85
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 56
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:939c6a7c-4c8b-4672-8884-21e9b48e103e
+Time:2024-06-02T11:14:35.5624900Z</message></error>
+--changesetresponse_adad935f-5409-45f8-aba8-b79f02da8a85--
+--batchresponse_b292cd78-0ceb-431c-a0a3-d1cba9843686--
+.
+Error (2024-06-02T11:17:06Z): NetTransport - MAEventTable: Level:2 ActivityId:1014baa6-643c-4150-ba32-bbc8e29eb608 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(47 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 116730
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:14:04 GMT
+Content-ID: 1
+Content-Length: 1823
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:13.6230000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_1</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">27032</d:Pid><d:Tid m:type="Edm.Int32">27976</d:Tid><d:ActivityId m:type="Edm.String">7ad192e1-53ce-4f4f-a774-f8e3390d35e4</d:ActivityId><d:Function m:type="Edm.String">XTableConnectionBatchObject::SendBytesRequestAndGetHttpStatus</d:Function><d:Line m:type="Edm.Int32">2462</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">12002</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">WinHttpReceiveResponse failed with ERROR_WINHTTP_TIMEOUT (12002)</d:Messa
+Error (2024-06-02T11:17:06Z): NetTransport - MAEventTable: Level:2 ActivityId:ba42b637-db5d-4857-a5cc-e72198cc1908 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(56 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 184919
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADWindowsEventLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:14:04 GMT
+Content-ID: 1
+Content-Length: 3202
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:56:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:56:00.7500669Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_1</d:RoleInstance><d:ProviderGuid m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ProviderGuid><d:ProviderName m:type="Edm.String">AzureDiagnostics</d:ProviderName><d:EventId m:type="Edm.Int32">0</d:EventId><d:Level m:type="Edm.Int32">2</d:Level><d:Pid m:type="Edm.Int32">0</d:Pid><d:Tid m:type="Edm.Int32">0</d:Tid><d:Opcode m:type="Edm.Int32">0</d:Opcode><d:Task m:type="Edm.Int32">0</d:Task><d:Channel m:type="Edm.String">Application</d:Channel><d:Description m:type="Edm.String">Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tab
+Error (2024-06-02T11:17:08Z): NetTransport - MAEventTable: Level:2 ActivityId:4d320def-b171-4bcf-a5d8-48e74b4127bc MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_ed9d15a5-279b-40ad-9514-18031181eaf9
+Content-Type: multipart/mixed; boundary=changesetresponse_ba00c052-d05e-4f1e-b8bd-1a92a3f1d8f2
+
+--changesetresponse_ba00c052-d05e-4f1e-b8bd-1a92a3f1d8f2
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 32
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:6de72ae0-34c1-499c-a465-a40007d55caf
+Time:2024-06-02T11:14:40.1874902Z</message></error>
+--changesetresponse_ba00c052-d05e-4f1e-b8bd-1a92a3f1d8f2--
+--batchresponse_ed9d15a5-279b-40ad-9514-18031181eaf9--
+.
+Error (2024-06-02T11:17:08Z): NetTransport - MAEventTable: Level:2 ActivityId:4d320def-b171-4bcf-a5d8-48e74b4127bc MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(32 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 79685
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:14:09 GMT
+Content-ID: 1
+Content-Length: 2088
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:00.9678835Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_1</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">16508</d:Pid><d:Tid m:type="Edm.Int32">1732</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime sta
+Info  (2024-06-02T11:17:09Z): MonAgentManager.exe - MA is running with original configuration file 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MaConfig.xml'; this file is part of the role deployment
+Info  (2024-06-02T11:17:11Z): MonAgentManager.exe - The configuration identity is 'WADVer0v0'
+Info  (2024-06-02T11:17:11Z): MonAgentManager.exe - Identity for the MA session is 'WAD/deployment29(435)/HealthMonitoringService/deployment29(435).Cloud.HealthMonitoringService_IN_0'
+Error (2024-06-02T11:17:13Z): EtwListener - MAEventTable: Level:1 ActivityId:17eb259e-8398-47a5-a5b3-f080e87f57df MDRESULT:0x00000000 ErrorCode(4201):The instance name passed was not recognized as valid by a WMI data provider. Message:Error: ProcessTrace failure exceeded the limit(=3), exit event thread, sessionName=MA_ETWSESSION_WAD_deployment29_435__HealthMonitoringService_deployment29_435_.Cloud.HealthMonitoringService_IN_1
+If this persists it could mean that another MA is running with the same ETW session name.
+Info  (2024-06-02T11:17:14Z): MonAgentManager.exe - Node diagnostics is disabled in the config file. The on-demand request functionality is disabled
+Error (2024-06-02T11:17:14Z): SelfMonitoring - MAEventTable: Level:1 ActivityId:9cc5befb-ffc5-47e9-ba01-cc2b75058f8b MDRESULT:0x80010007 ErrorCode(0): Message:Fatal error detected; shutting down the agent AgentCore#5
+Error (2024-06-02T11:17:14Z): NetTransport - MAEventTable: Level:2 ActivityId:f2d044c6-96fa-4e0e-aa6d-df368d502e16 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_668a2c3b-4ba6-47f6-af85-99b9c6cb0170
+Content-Type: multipart/mixed; boundary=changesetresponse_82aac329-e06b-43d3-8f60-fa95613ae800
+
+--changesetresponse_82aac329-e06b-43d3-8f60-fa95613ae800
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 56
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:699f1ba1-c4bc-43c4-a78a-3f9adab51140
+Time:2024-06-02T11:16:06.6616064Z</message></error>
+--changesetresponse_82aac329-e06b-43d3-8f60-fa95613ae800--
+--batchresponse_668a2c3b-4ba6-47f6-af85-99b9c6cb0170--
+.
+Error (2024-06-02T11:17:22Z): NetTransport - MAEventTable: Level:2 ActivityId:f2d044c6-96fa-4e0e-aa6d-df368d502e16 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(56 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 184919
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADWindowsEventLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:15:36 GMT
+Content-ID: 1
+Content-Length: 3202
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:56:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:56:00.7500669Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_1</d:RoleInstance><d:ProviderGuid m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ProviderGuid><d:ProviderName m:type="Edm.String">AzureDiagnostics</d:ProviderName><d:EventId m:type="Edm.Int32">0</d:EventId><d:Level m:type="Edm.Int32">2</d:Level><d:Pid m:type="Edm.Int32">0</d:Pid><d:Tid m:type="Edm.Int32">0</d:Tid><d:Opcode m:type="Edm.Int32">0</d:Opcode><d:Task m:type="Edm.Int32">0</d:Task><d:Channel m:type="Edm.String">Application</d:Channel><d:Description m:type="Edm.String">Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tab
+Error (2024-06-02T11:17:25Z): NetTransport - MAEventTable: Level:2 ActivityId:b0aaf69f-b08a-4e12-9f95-7ed651b0203d MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_77c9c215-5297-4e1f-af8e-d70cfaa735db
+Content-Type: multipart/mixed; boundary=changesetresponse_87877924-b823-4c45-bf26-696306ba327c
+
+--changesetresponse_87877924-b823-4c45-bf26-696306ba327c
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 47
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:6f2eeee3-f642-432b-a0ad-e6a8b159f3bb
+Time:2024-06-02T11:16:06.8214908Z</message></error>
+--changesetresponse_87877924-b823-4c45-bf26-696306ba327c--
+--batchresponse_77c9c215-5297-4e1f-af8e-d70cfaa735db--
+.
+Error (2024-06-02T11:17:26Z): NetTransport - MAEventTable: Level:2 ActivityId:b0aaf69f-b08a-4e12-9f95-7ed651b0203d MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(47 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 116730
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:15:36 GMT
+Content-ID: 1
+Content-Length: 1823
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:13.6230000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_1</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">27032</d:Pid><d:Tid m:type="Edm.Int32">27976</d:Tid><d:ActivityId m:type="Edm.String">7ad192e1-53ce-4f4f-a774-f8e3390d35e4</d:ActivityId><d:Function m:type="Edm.String">XTableConnectionBatchObject::SendBytesRequestAndGetHttpStatus</d:Function><d:Line m:type="Edm.Int32">2462</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">12002</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">WinHttpReceiveResponse failed with ERROR_WINHTTP_TIMEOUT (12002)</d:Messa
+Error (2024-06-02T11:17:32Z): NetTransport - MAEventTable: Level:2 ActivityId:3e55962b-be5f-44d9-a98f-f4e80f947a2d MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_8f0a079b-b426-4f3b-ac99-24b2990ed634
+Content-Type: multipart/mixed; boundary=changesetresponse_ea25dd16-a4f4-4b26-9b0a-175f5ca0f78b
+
+--changesetresponse_ea25dd16-a4f4-4b26-9b0a-175f5ca0f78b
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 32
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:c0064a6a-cccf-4da3-90e4-f99654112163
+Time:2024-06-02T11:16:11.8484904Z</message></error>
+--changesetresponse_ea25dd16-a4f4-4b26-9b0a-175f5ca0f78b--
+--batchresponse_8f0a079b-b426-4f3b-ac99-24b2990ed634--
+.
+Error (2024-06-02T11:17:35Z): NetTransport - MAEventTable: Level:2 ActivityId:3e55962b-be5f-44d9-a98f-f4e80f947a2d MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(32 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 79685
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:15:40 GMT
+Content-ID: 1
+Content-Length: 2088
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:00.9678835Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_1</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">16508</d:Pid><d:Tid m:type="Edm.Int32">1732</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime sta
+Error (2024-06-02T11:17:37Z): NetTransport - MAEventTable: Level:2 ActivityId:cddc3da2-4617-47ba-b8fe-c57b6baa89c9 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_e8a3889e-5bbd-4c91-a9e2-9de848aeb02f
+Content-Type: multipart/mixed; boundary=changesetresponse_915a007d-ae4e-4b8d-90a2-f8fb907dae01
+
+--changesetresponse_915a007d-ae4e-4b8d-90a2-f8fb907dae01
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 32
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:6faa4890-3150-4ea1-b98d-047a6155db6d
+Time:2024-06-02T11:16:28.7844906Z</message></error>
+--changesetresponse_915a007d-ae4e-4b8d-90a2-f8fb907dae01--
+--batchresponse_e8a3889e-5bbd-4c91-a9e2-9de848aeb02f--
+.
+Error (2024-06-02T11:17:40Z): NetTransport - MAEventTable: Level:2 ActivityId:cddc3da2-4617-47ba-b8fe-c57b6baa89c9 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(32 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 79685
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:15:58 GMT
+Content-ID: 1
+Content-Length: 2088
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:00.9678835Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">16508</d:Pid><d:Tid m:type="Edm.Int32">1732</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime sta
+Error (2024-06-02T11:17:41Z): NetTransport - MAEventTable: Level:2 ActivityId:eddb77b9-b117-42a7-a672-b310b0987dd8 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_19785ca7-7312-4fd2-bb0a-9162132eebc0
+Content-Type: multipart/mixed; boundary=changesetresponse_274720ed-cc64-45be-9308-1ee51144280e
+
+--changesetresponse_274720ed-cc64-45be-9308-1ee51144280e
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 47
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:e2912161-34da-4756-955d-3f4bf72f9661
+Time:2024-06-02T11:16:29.1684918Z</message></error>
+--changesetresponse_274720ed-cc64-45be-9308-1ee51144280e--
+--batchresponse_19785ca7-7312-4fd2-bb0a-9162132eebc0--
+.
+Error (2024-06-02T11:17:41Z): NetTransport - MAEventTable: Level:2 ActivityId:eddb77b9-b117-42a7-a672-b310b0987dd8 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(47 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 116730
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:15:58 GMT
+Content-ID: 1
+Content-Length: 1823
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:13.6230000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">27032</d:Pid><d:Tid m:type="Edm.Int32">27976</d:Tid><d:ActivityId m:type="Edm.String">7ad192e1-53ce-4f4f-a774-f8e3390d35e4</d:ActivityId><d:Function m:type="Edm.String">XTableConnectionBatchObject::SendBytesRequestAndGetHttpStatus</d:Function><d:Line m:type="Edm.Int32">2462</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">12002</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">WinHttpReceiveResponse failed with ERROR_WINHTTP_TIMEOUT (12002)</d:Messa
+Error (2024-06-02T11:17:42Z): NetTransport - MAEventTable: Level:2 ActivityId:bb85467a-0cf2-4dc5-b7d4-5c365a71d12e MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_5402d931-9f2b-47ea-8b89-18fccdc44d33
+Content-Type: multipart/mixed; boundary=changesetresponse_630e56be-f5f7-4559-9d77-fce8ae0cebe4
+
+--changesetresponse_630e56be-f5f7-4559-9d77-fce8ae0cebe4
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 56
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:a1fa7576-db93-48c4-b82f-5200770a3ad6
+Time:2024-06-02T11:16:29.2024954Z</message></error>
+--changesetresponse_630e56be-f5f7-4559-9d77-fce8ae0cebe4--
+--batchresponse_5402d931-9f2b-47ea-8b89-18fccdc44d33--
+.
+Error (2024-06-02T11:17:43Z): NetTransport - MAEventTable: Level:2 ActivityId:bb85467a-0cf2-4dc5-b7d4-5c365a71d12e MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(56 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 184919
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADWindowsEventLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:15:58 GMT
+Content-ID: 1
+Content-Length: 3202
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:56:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:56:00.7500669Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:ProviderGuid m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ProviderGuid><d:ProviderName m:type="Edm.String">AzureDiagnostics</d:ProviderName><d:EventId m:type="Edm.Int32">0</d:EventId><d:Level m:type="Edm.Int32">2</d:Level><d:Pid m:type="Edm.Int32">0</d:Pid><d:Tid m:type="Edm.Int32">0</d:Tid><d:Opcode m:type="Edm.Int32">0</d:Opcode><d:Task m:type="Edm.Int32">0</d:Task><d:Channel m:type="Edm.String">Application</d:Channel><d:Description m:type="Edm.String">Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tab
+Info  (2024-06-02T11:17:43Z): MonAgentManager.exe - AgentCore has exited.
+Info  (2024-06-02T11:17:44Z): MonAgentManager.exe - Dumping MA error and warning events from D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
+Error (2024-06-02T11:17:44Z): NetTransport - MAEventTable: Level:2 ActivityId:e6edd580-812e-4149-a1af-9d4ce2be30ba MDRESULT:0x00000000 ErrorCode(12002): Message:WinHttpReceiveResponse failed with ERROR_WINHTTP_TIMEOUT (12002)
+Error (2024-06-02T11:17:44Z): NetTransport - MAEventTable: Level:2 ActivityId:e6edd580-812e-4149-a1af-9d4ce2be30ba MDRESULT:0x80050003 ErrorCode(0): Message:Failed to send bytes to XTable WADPerformanceCountersTable due to network connection issues
+Error (2024-06-02T11:17:44Z): NetTransport - MAEventTable: Level:2 ActivityId:e6edd580-812e-4149-a1af-9d4ce2be30ba MDRESULT:0x80050022 ErrorCode(0): Message:After 1 retries, Failed to send out data(6 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 10027
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADPerformanceCountersTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:16:27 GMT
+Content-ID: 1
+Content-Length: 1280
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T11:15:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T11:15:40.6720140Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:CounterName m:type="Edm.String">\ASP.NET Applications(__Total__)\Errors Total/Sec</d:CounterName><d:CounterValue m:type="Edm.Double">0.000000</d:CounterValue><d:EventTickCount m:type="Edm.Int64">638529237406720140</d:EventTickCount><d:PartitionKey>0638529237000000000</d:PartitionKey><d:RowKey>deployment29(435)___HealthMonitoringService___deployment29(435).Cloud.HealthMonitoringService_IN_0___0000000004295558154</d:RowKey><d:RowIndex m:type="Edm.String">0000000004295558154</d:RowIndex><d:TIMESTAMP m:type="Edm.DateTime">2024-06-02T11:15:00Z</d:TIMESTAMP></m:properties></content></entry>
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+Error (2024-06-02T11:17:45Z): NetTransport - MAEventTable: Level:2 ActivityId:e6edd580-812e-4149-a1af-9d4ce2be30ba MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADPerformanceCountersTable; partition key 0638529237000000000
+Error (2024-06-02T11:17:45Z): NetTransport - MAEventTable: Level:2 ActivityId:e6edd580-812e-4149-a1af-9d4ce2be30ba MDRESULT:0x80050002 ErrorCode(0): Message:Fail to finalize the XTableConnection object
+Error (2024-06-02T11:17:47Z): NetTransport - MAEventTable: Level:2 ActivityId:e6edd580-812e-4149-a1af-9d4ce2be30ba MDRESULT:0x80050002 ErrorCode(0): Message:Failed to close channel: datasite = XTableWadAccount
+Error (2024-06-02T11:17:48Z): Tasks - MAEventTable: Level:2 ActivityId:e6edd580-812e-4149-a1af-9d4ce2be30ba MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(PerformanceCountersTableQuery_PerformanceCountersTable_WADPerformanceCountersTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Info  (2024-06-02T11:17:53Z): MonAgentManager.exe - Starting agent: 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\plugins\Diagnostics\Monitor\x64\AgentCore.exe   -deploymentdir "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\plugins\Diagnostics\Monitor\x64" -LocalPath "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105"    -InitializedEvent "WADM-StartUp-5cc6e6519db543a38fe26926cb4879f7" -events -wadVer1v5 -UseProxyServer   -ConfigFile "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MaConfig.xml" -disableupdate -managerver 1  -parent 4404 -ShutDownEvent WADDM-ShutDown-5cc6e6519db543a38fe26926cb4879f79652 -TotalShutDownEvent WADDM-TotalShutDown-5cc6e6519db543a38fe26926cb4879f79652 -xstoreaccounts "WadAccount#true#devstoreaccount1#key==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000"'
+Info  (2024-06-02T11:18:00Z): MonAgentManager.exe - Dumping MA error and warning events from D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
+Info  (2024-06-02T11:18:00Z): MonAgentManager.exe - MA is running with original configuration file 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MaConfig.xml'; this file is part of the role deployment
+Info  (2024-06-02T11:18:00Z): MonAgentManager.exe - The configuration identity is 'WADVer0v0'
+Info  (2024-06-02T11:18:00Z): MonAgentManager.exe - Identity for the MA session is 'WAD/deployment29(435)/HealthMonitoringService/deployment29(435).Cloud.HealthMonitoringService_IN_1'
+Error (2024-06-02T11:18:00Z): NetTransport - MAEventTable: Level:2 ActivityId:a4ec34c9-4157-480e-8914-9e00914caea1 MDRESULT:0x80010008 ErrorCode(0): Message:Request #1 failed in the batch request with status code 500
+Error (2024-06-02T11:18:00Z): NetTransport - MAEventTable: Level:2 ActivityId:a4ec34c9-4157-480e-8914-9e00914caea1 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_905127f4-f3c4-4b6f-b627-053f64dfc949
+Content-Type: multipart/mixed; boundary=changesetresponse_cd6b5be2-0b4c-4ab8-aeb5-539a476cd937
+
+--changesetresponse_cd6b5be2-0b4c-4ab8-aeb5-539a476cd937
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 32
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:3209e792-ce78-47cd-81db-6c4459e78e25
+Time:2024-06-02T11:17:59.3624919Z</message></error>
+--changesetresponse_cd6b5be2-0b4c-4ab8-aeb5-539a476cd937--
+--batchresponse_905127f4-f3c4-4b6f-b627-053f64dfc949--
+.
+Info  (2024-06-02T11:18:05Z): MonAgentManager.exe - Received health config from MA: Cpu rate is 50% (hard limit); Memory limit is -1 MB (no restrictions); Working set limit is 2000 MB (no restrictions)
+Error (2024-06-02T11:18:06Z): NetTransport - MAEventTable: Level:2 ActivityId:a4ec34c9-4157-480e-8914-9e00914caea1 MDRESULT:0x80010008 ErrorCode(0): Message:Failed to send bytes to XTable WADDiagnosticInfrastructureLogsTable as Xstore rejected the request
+Info  (2024-06-02T11:18:06Z): MonAgentManager.exe - Cpu rate for job is 50% and it is a hard limit (Agent may run slower to conform to the Cpu setting).
+Error (2024-06-02T11:18:06Z): EtwListener - MAEventTable: Level:1 ActivityId:7f3e3e4b-1d74-4ab6-b73e-27d293b6b10d MDRESULT:0x00000000 ErrorCode(4201):The instance name passed was not recognized as valid by a WMI data provider. Message:Error: ProcessTrace failure exceeded the limit(=3), exit event thread, sessionName=MA_ETWSESSION_WAD_deployment29_435__HealthMonitoringService_deployment29_435_.Cloud.HealthMonitoringService_IN_0
+If this persists it could mean that another MA is running with the same ETW session name.
+Info  (2024-06-02T11:18:09Z): MonAgentManager.exe - No working set limit for job set
+Error (2024-06-02T11:18:09Z): NetTransport - MAEventTable: Level:2 ActivityId:a4ec34c9-4157-480e-8914-9e00914caea1 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(32 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 79685
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:17:28 GMT
+Content-ID: 1
+Content-Length: 2088
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:00.9678835Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">16508</d:Pid><d:Tid m:type="Edm.Int32">1732</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime sta
+Error (2024-06-02T11:18:12Z): NetTransport - MAEventTable: Level:2 ActivityId:a4ec34c9-4157-480e-8914-9e00914caea1 MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADDiagnosticInfrastructureLogsTable; partition key 0638529226200000000
+Error (2024-06-02T11:18:12Z): NetTransport - MAEventTable: Level:2 ActivityId:a4ec34c9-4157-480e-8914-9e00914caea1 MDRESULT:0x80050002 ErrorCode(0): Message:Fail to finalize the XTableConnection object
+Error (2024-06-02T11:18:12Z): NetTransport - MAEventTable: Level:2 ActivityId:a4ec34c9-4157-480e-8914-9e00914caea1 MDRESULT:0x80050002 ErrorCode(0): Message:Failed to close channel: datasite = XTableWadAccount
+Error (2024-06-02T11:18:13Z): Tasks - MAEventTable: Level:2 ActivityId:a4ec34c9-4157-480e-8914-9e00914caea1 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(DiagnosticInfrastructureLogsTableQuery_DiagnosticInfrastructureLogsTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Info  (2024-06-02T11:18:13Z): MonAgentManager.exe - Node diagnostics is disabled in the config file. The on-demand request functionality is disabled
+Error (2024-06-02T11:18:13Z): NetTransport - MAEventTable: Level:2 ActivityId:28d8c830-c5f9-4e6c-ae17-e644d6c89931 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_090f84c6-2aa0-425b-a9dd-dd9ef7193cb9
+Content-Type: multipart/mixed; boundary=changesetresponse_e3c2c431-d5a1-4aa9-958e-4a4a16c23e2c
+
+--changesetresponse_e3c2c431-d5a1-4aa9-958e-4a4a16c23e2c
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 47
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:182340aa-1a7f-4587-85ae-c6a6ea734cd1
+Time:2024-06-02T11:18:00.0114889Z</message></error>
+--changesetresponse_e3c2c431-d5a1-4aa9-958e-4a4a16c23e2c--
+--batchresponse_090f84c6-2aa0-425b-a9dd-dd9ef7193cb9--
+.
+Error (2024-06-02T11:18:13Z): NetTransport - MAEventTable: Level:2 ActivityId:28d8c830-c5f9-4e6c-ae17-e644d6c89931 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(47 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 116730
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:17:29 GMT
+Content-ID: 1
+Content-Length: 1823
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:13.6230000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">27032</d:Pid><d:Tid m:type="Edm.Int32">27976</d:Tid><d:ActivityId m:type="Edm.String">7ad192e1-53ce-4f4f-a774-f8e3390d35e4</d:ActivityId><d:Function m:type="Edm.String">XTableConnectionBatchObject::SendBytesRequestAndGetHttpStatus</d:Function><d:Line m:type="Edm.Int32">2462</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">12002</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">WinHttpReceiveResponse failed with ERROR_WINHTTP_TIMEOUT (12002)</d:Messa
+Error (2024-06-02T11:18:14Z): Tasks - MAEventTable: Level:2 ActivityId:28d8c830-c5f9-4e6c-ae17-e644d6c89931 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(MAEventTableDiagnosticInfrastructureLogsTableQuery_MAEventTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-02T11:18:14Z): NetTransport - MAEventTable: Level:2 ActivityId:b5760db1-5953-44b6-9d86-3f1c79375069 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_b0985c89-58db-4340-9011-66bfa3cf55ca
+Content-Type: multipart/mixed; boundary=changesetresponse_49e6bb5b-2efe-4da0-9a6f-5dbaee1e8377
+
+--changesetresponse_49e6bb5b-2efe-4da0-9a6f-5dbaee1e8377
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 56
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:ad7279f2-5032-4708-89ed-c384b49ea0b3
+Time:2024-06-02T11:18:00.2644889Z</message></error>
+--changesetresponse_49e6bb5b-2efe-4da0-9a6f-5dbaee1e8377--
+--batchresponse_b0985c89-58db-4340-9011-66bfa3cf55ca--
+.
+Error (2024-06-02T11:18:14Z): NetTransport - MAEventTable: Level:2 ActivityId:b5760db1-5953-44b6-9d86-3f1c79375069 MDRESULT:0x80010008 ErrorCode(0): Message:Failed to send bytes to XTable WADWindowsEventLogsTable as Xstore rejected the request
+Error (2024-06-02T11:18:15Z): NetTransport - MAEventTable: Level:2 ActivityId:b5760db1-5953-44b6-9d86-3f1c79375069 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(56 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 184919
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADWindowsEventLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:17:29 GMT
+Content-ID: 1
+Content-Length: 3202
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:56:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:56:00.7500669Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_0</d:RoleInstance><d:ProviderGuid m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ProviderGuid><d:ProviderName m:type="Edm.String">AzureDiagnostics</d:ProviderName><d:EventId m:type="Edm.Int32">0</d:EventId><d:Level m:type="Edm.Int32">2</d:Level><d:Pid m:type="Edm.Int32">0</d:Pid><d:Tid m:type="Edm.Int32">0</d:Tid><d:Opcode m:type="Edm.Int32">0</d:Opcode><d:Task m:type="Edm.Int32">0</d:Task><d:Channel m:type="Edm.String">Application</d:Channel><d:Description m:type="Edm.String">Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tab
+Error (2024-06-02T11:18:15Z): NetTransport - MAEventTable: Level:2 ActivityId:b5760db1-5953-44b6-9d86-3f1c79375069 MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADWindowsEventLogsTable; partition key 0638529225600000000
+Error (2024-06-02T11:18:15Z): Tasks - MAEventTable: Level:2 ActivityId:b5760db1-5953-44b6-9d86-3f1c79375069 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(WindowsEventLogsTableQuery_WindowsEventLogsTable_WADWindowsEventLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Info  (2024-06-02T11:19:11Z): MonAgentManager.exe - Dumping MA error and warning events from D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
+Error (2024-06-02T11:19:11Z): SysCounterListener.dll - MAEventTable: Level:2 ActivityId:49a02769-7228-4c03-9ce2-bb8970eed1b4 MDRESULT:0x00000000 ErrorCode(-1073738824): Message:PdhAddEnglishCounter(\Web Service(_Total)\ISAPI Extension Requests/sec) failed with PDH_CSTATUS_NO_OBJECT (0xC0000BB8)
+Error (2024-06-02T11:19:11Z): SysCounterListener.dll - MAEventTable: Level:2 ActivityId:49a02769-7228-4c03-9ce2-bb8970eed1b4 MDRESULT:0x00000000 ErrorCode(-1073738824): Message:PdhAddEnglishCounter(\Web Service(_Total)\Bytes Total/Sec) failed with PDH_CSTATUS_NO_OBJECT (0xC0000BB8)
+Error (2024-06-02T11:19:11Z): SelfMonitoring - MAEventTable: Level:1 ActivityId:c51de07f-8813-4017-8306-ecf8ebf6b210 MDRESULT:0x80010007 ErrorCode(0): Message:Fatal error detected; shutting down the agent AgentCore#6
+Error (2024-06-02T11:19:11Z): NetTransport - MAEventTable: Level:2 ActivityId:b15ea14f-98d3-4f9f-81f6-f2ce8271f2ac MDRESULT:0x80010008 ErrorCode(0): Message:Request #1 failed in the batch request with status code 500
+Error (2024-06-02T11:19:11Z): NetTransport - MAEventTable: Level:2 ActivityId:b15ea14f-98d3-4f9f-81f6-f2ce8271f2ac MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_8a26be74-a8fd-4deb-8076-645de2a238b6
+Content-Type: multipart/mixed; boundary=changesetresponse_c4fa5ce9-97b8-47b6-a35c-4ea6b2b784fe
+
+--changesetresponse_c4fa5ce9-97b8-47b6-a35c-4ea6b2b784fe
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 32
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:85b20b74-abbc-4ca1-85ae-ad348ab3b484
+Time:2024-06-02T11:18:50.3634890Z</message></error>
+--changesetresponse_c4fa5ce9-97b8-47b6-a35c-4ea6b2b784fe--
+--batchresponse_8a26be74-a8fd-4deb-8076-645de2a238b6--
+.
+Error (2024-06-02T11:19:11Z): NetTransport - MAEventTable: Level:2 ActivityId:b15ea14f-98d3-4f9f-81f6-f2ce8271f2ac MDRESULT:0x80010008 ErrorCode(0): Message:Failed to send bytes to XTable WADDiagnosticInfrastructureLogsTable as Xstore rejected the request
+Error (2024-06-02T11:19:11Z): NetTransport - MAEventTable: Level:2 ActivityId:b15ea14f-98d3-4f9f-81f6-f2ce8271f2ac MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(32 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 79685
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:18:20 GMT
+Content-ID: 1
+Content-Length: 2088
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:00.9678835Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_1</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String">15d2502e-8793-435d-b9fa-87e67a7bba29</d:ProviderGuid><d:EventId m:type="Edm.Int32">61468</d:EventId><d:Pid m:type="Edm.Int32">16508</d:Pid><d:Tid m:type="Edm.Int32">1732</d:Tid><d:ActivityId m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ActivityId><d:Message m:type="Edm.String">EventName=&quot;InfrastructureLogsEvent&quot; Message=&quot;Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime sta
+Error (2024-06-02T11:19:12Z): NetTransport - MAEventTable: Level:2 ActivityId:b15ea14f-98d3-4f9f-81f6-f2ce8271f2ac MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADDiagnosticInfrastructureLogsTable; partition key 0638529226200000000
+Error (2024-06-02T11:19:12Z): NetTransport - MAEventTable: Level:2 ActivityId:b15ea14f-98d3-4f9f-81f6-f2ce8271f2ac MDRESULT:0x80050002 ErrorCode(0): Message:Fail to finalize the XTableConnection object
+Error (2024-06-02T11:19:12Z): NetTransport - MAEventTable: Level:2 ActivityId:b15ea14f-98d3-4f9f-81f6-f2ce8271f2ac MDRESULT:0x80050002 ErrorCode(0): Message:Failed to close channel: datasite = XTableWadAccount
+Error (2024-06-02T11:19:12Z): Tasks - MAEventTable: Level:2 ActivityId:b15ea14f-98d3-4f9f-81f6-f2ce8271f2ac MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(DiagnosticInfrastructureLogsTableQuery_DiagnosticInfrastructureLogsTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-02T11:19:12Z): NetTransport - MAEventTable: Level:2 ActivityId:3f521fb5-269d-4e48-90b1-5f6b2c4e37b9 MDRESULT:0x80010008 ErrorCode(0): Message:At least one of the request failed, index=1, response: --batchresponse_f82b1f57-17b8-4a08-b7d7-622d067aae56
+Content-Type: multipart/mixed; boundary=changesetresponse_22562cfb-23c9-4ac7-8365-efc4c575a96f
+
+--changesetresponse_22562cfb-23c9-4ac7-8365-efc4c575a96f
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 500 Internal Server Error
+Content-ID: 47
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Preference-Applied: return-no-content
+DataServiceVersion: 1.0;
+Content-Type: application/xml;charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?><error xmlns="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"><code>InternalError</code><message xml:lang="en-US">0:Server encountered an internal error. Please try again after some time.
+RequestId:4f83c18f-d03b-4758-a91c-a3a136e7d907
+Time:2024-06-02T11:18:50.6444882Z</message></error>
+--changesetresponse_22562cfb-23c9-4ac7-8365-efc4c575a96f--
+--batchresponse_f82b1f57-17b8-4a08-b7d7-622d067aae56--
+.
+Error (2024-06-02T11:19:13Z): NetTransport - MAEventTable: Level:2 ActivityId:3f521fb5-269d-4e48-90b1-5f6b2c4e37b9 MDRESULT:0x80010008 ErrorCode(0): Message:After 0 retries, Failed to send out data(47 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 116730
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADDiagnosticInfrastructureLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:18:20 GMT
+Content-ID: 1
+Content-Length: 1823
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:57:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:57:13.6230000Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_1</d:RoleInstance><d:Level m:type="Edm.Int32">2</d:Level><d:ProviderGuid m:type="Edm.String"></d:ProviderGuid><d:EventId m:type="Edm.Int32">64000</d:EventId><d:Pid m:type="Edm.Int32">27032</d:Pid><d:Tid m:type="Edm.Int32">27976</d:Tid><d:ActivityId m:type="Edm.String">7ad192e1-53ce-4f4f-a774-f8e3390d35e4</d:ActivityId><d:Function m:type="Edm.String">XTableConnectionBatchObject::SendBytesRequestAndGetHttpStatus</d:Function><d:Line m:type="Edm.Int32">2462</d:Line><d:MDRESULT m:type="Edm.Int32">0</d:MDRESULT><d:ErrorCode m:type="Edm.Int32">12002</d:ErrorCode><d:ErrorCodeMsg m:type="Edm.String"></d:ErrorCodeMsg><d:Message m:type="Edm.String">WinHttpReceiveResponse failed with ERROR_WINHTTP_TIMEOUT (12002)</d:Messa
+Error (2024-06-02T11:19:13Z): Tasks - MAEventTable: Level:2 ActivityId:3f521fb5-269d-4e48-90b1-5f6b2c4e37b9 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(MAEventTableDiagnosticInfrastructureLogsTableQuery_MAEventTable_WADDiagnosticInfrastructureLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Info  (2024-06-02T11:19:13Z): MonAgentManager.exe - MA is running with original configuration file 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MaConfig.xml'; this file is part of the role deployment
+Info  (2024-06-02T11:19:13Z): MonAgentManager.exe - The configuration identity is 'WADVer0v0'
+Info  (2024-06-02T11:19:13Z): MonAgentManager.exe - Identity for the MA session is 'WAD/deployment29(435)/HealthMonitoringService/deployment29(435).Cloud.HealthMonitoringService_IN_0'
+Error (2024-06-02T11:19:13Z): EtwListener - MAEventTable: Level:1 ActivityId:2d075061-c5f5-466c-993a-806b69808676 MDRESULT:0x00000000 ErrorCode(4201):The instance name passed was not recognized as valid by a WMI data provider. Message:Error: ProcessTrace failure exceeded the limit(=3), exit event thread, sessionName=MA_ETWSESSION_WAD_deployment29_435__HealthMonitoringService_deployment29_435_.Cloud.HealthMonitoringService_IN_1
+If this persists it could mean that another MA is running with the same ETW session name.
+Info  (2024-06-02T11:19:13Z): MonAgentManager.exe - Node diagnostics is disabled in the config file. The on-demand request functionality is disabled
+Error (2024-06-02T11:19:13Z): NetTransport - MAEventTable: Level:2 ActivityId:32f0c597-09be-471a-ab4e-99e935739b23 MDRESULT:0x00000000 ErrorCode(12002): Message:WinHttpReceiveResponse failed with ERROR_WINHTTP_TIMEOUT (12002)
+Error (2024-06-02T11:19:13Z): NetTransport - MAEventTable: Level:2 ActivityId:32f0c597-09be-471a-ab4e-99e935739b23 MDRESULT:0x80050003 ErrorCode(0): Message:Failed to send bytes to XTable WADWindowsEventLogsTable due to network connection issues
+Error (2024-06-02T11:19:13Z): NetTransport - MAEventTable: Level:2 ActivityId:32f0c597-09be-471a-ab4e-99e935739b23 MDRESULT:0x80050022 ErrorCode(0): Message:After 1 retries, Failed to send out data(56 messages), "--batch_36522ad7-fc75-4b56-8c71-56071383e000
+Content-Type: multipart/mixed; boundary=changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Length: 184919
+
+--changeset_77162fcd-b8da-41ac-a9f8-9357efbbd000
+Content-Type: application/http
+Content-Transfer-Encoding:binary
+
+POST http://127.0.0.1:10002/devstoreaccount1/WADWindowsEventLogsTable HTTP/1.1
+Host: http://127.0.0.1:10002
+Prefer: return-no-content
+Content-Type: application/atom+xml; type=entry
+x-ms-date: Sun, 02 Jun 2024 11:18:29 GMT
+Content-ID: 1
+Content-Length: 3202
+
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+xmlns="http://www.w3.org/2005/Atom"><title /><updated>2024-06-02T10:56:00Z</updated><author><name /></author><id /><content type="application/xml"><m:properties><d:PreciseTimeStamp m:type="Edm.DateTime">2024-06-02T10:56:00.7500669Z</d:PreciseTimeStamp><d:DeploymentId m:type="Edm.String">deployment29(435)</d:DeploymentId><d:Role m:type="Edm.String">HealthMonitoringService</d:Role><d:RoleInstance m:type="Edm.String">deployment29(435).Cloud.HealthMonitoringService_IN_1</d:RoleInstance><d:ProviderGuid m:type="Edm.String">00000000-0000-0000-0000-000000000000</d:ProviderGuid><d:ProviderName m:type="Edm.String">AzureDiagnostics</d:ProviderName><d:EventId m:type="Edm.Int32">0</d:EventId><d:Level m:type="Edm.Int32">2</d:Level><d:Pid m:type="Edm.Int32">0</d:Pid><d:Tid m:type="Edm.Int32">0</d:Tid><d:Opcode m:type="Edm.Int32">0</d:Opcode><d:Task m:type="Edm.Int32">0</d:Task><d:Channel m:type="Edm.String">Application</d:Channel><d:Description m:type="Edm.String">Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail&#xA;   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)&#xA;   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tab
+Error (2024-06-02T11:19:13Z): NetTransport - MAEventTable: Level:2 ActivityId:32f0c597-09be-471a-ab4e-99e935739b23 MDRESULT:0x80050002 ErrorCode(0): Message:Push out batch operation 0 failed; XTable WADWindowsEventLogsTable; partition key 0638529225600000000
+Error (2024-06-02T11:19:13Z): Tasks - MAEventTable: Level:2 ActivityId:32f0c597-09be-471a-ab4e-99e935739b23 MDRESULT:0x80050002 ErrorCode(0): Message:INetTransport1::CloseChannel(WindowsEventLogsTableQuery_WindowsEventLogsTable_WADWindowsEventLogsTable_PT1M_XTableWadAccount) failed; bytes sent 0
+Error (2024-06-02T11:19:13Z): SelfMonitoring - MAEventTable: Level:1 ActivityId:c204b5c7-d0a7-4a4d-a6ae-f3f62901770e MDRESULT:0x80010007 ErrorCode(0): Message:Fatal error detected; shutting down the agent AgentCore#5
+Info  (2024-06-02T11:19:13Z): MonAgentManager.exe - AgentCore has exited.
+Info  (2024-06-02T11:19:13Z): MonAgentManager.exe - Dumping MA error and warning events from D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
+Info  (2024-06-02T11:19:18Z): MonAgentManager.exe - Starting agent: 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\plugins\Diagnostics\Monitor\x64\AgentCore.exe   -deploymentdir "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\plugins\Diagnostics\Monitor\x64" -LocalPath "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105"    -InitializedEvent "WADM-StartUp-5cc6e6519db543a38fe26926cb4879f7" -events -wadVer1v5 -UseProxyServer   -ConfigFile "D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MaConfig.xml" -disableupdate -managerver 1  -parent 4404 -ShutDownEvent WADDM-ShutDown-5cc6e6519db543a38fe26926cb4879f79652 -TotalShutDownEvent WADDM-TotalShutDown-5cc6e6519db543a38fe26926cb4879f79652 -xstoreaccounts "WadAccount#true#devstoreaccount1#key==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000"'
+Info  (2024-06-02T11:19:30Z): MonAgentManager.exe - Dumping MA error and warning events from D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Tables\MAEventTable; use the summary logs or node diagnostics to get all of the events.
+Info  (2024-06-02T11:19:31Z): MonAgentManager.exe - MA is running with original configuration file 'D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\Cloud\csx\Debug\roles\HealthMonitoringService\approot\WAD0105\Configuration\MaConfig.xml'; this file is part of the role deployment
+Info  (2024-06-02T11:19:32Z): MonAgentManager.exe - The configuration identity is 'WADVer0v0'
+Info  (2024-06-02T11:19:35Z): MonAgentManager.exe - Received health config from MA: Cpu rate is 50% (hard limit); Memory limit is -1 MB (no restrictions); Working set limit is 2000 MB (no restrictions)
+Info  (2024-06-02T11:19:40Z): MonAgentManager.exe - Received health config from MA: Cpu rate is 50% (hard limit); Memory limit is -1 MB (no restrictions); Working set limit is 2000 MB (no restrictions)
+Info  (2024-06-02T11:19:41Z): MonAgentManager.exe - Identity for the MA session is 'WAD/deployment29(435)/HealthMonitoringService/deployment29(435).Cloud.HealthMonitoringService_IN_1'
+Info  (2024-06-02T11:19:44Z): MonAgentManager.exe - Cpu rate for job is 50% and it is a hard limit (Agent may run slower to conform to the Cpu setting).
+Info  (2024-06-02T11:19:45Z): MonAgentManager.exe - Received health config from MA: Cpu rate is 50% (hard limit); Memory limit is -1 MB (no restrictions); Working set limit is 2000 MB (no restrictions)
+Error (2024-06-02T11:19:50Z): EtwListener - MAEventTable: Level:1 ActivityId:27e47f37-0e45-4230-b1b8-5a6e69c5b947 MDRESULT:0x00000000 ErrorCode(4201):The instance name passed was not recognized as valid by a WMI data provider. Message:Error: ProcessTrace failure exceeded the limit(=3), exit event thread, sessionName=MA_ETWSESSION_WAD_deployment29_435__HealthMonitoringService_deployment29_435_.Cloud.HealthMonitoringService_IN_0
+If this persists it could mean that another MA is running with the same ETW session name.
+Info  (2024-06-02T11:19:51Z): MonAgentManager.exe - Node diagnostics is disabled in the config file. The on-demand request functionality is disabled

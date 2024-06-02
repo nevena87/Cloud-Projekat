@@ -40,3 +40,17 @@ C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud
 C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\Korisnik.977445ED.Up2Date
 C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.dll
 C:\Users\My Computer\Desktop\DRUGI_SEM 4. GODINA\CLOUD\posl\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.pdb
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\KorisnikService_Data.dll
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\KorisnikService_Data.pdb
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Newtonsoft.Json.dll
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\bin\Debug\Newtonsoft.Json.xml
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.csproj.AssemblyReference.cache
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.csproj.CoreCompileInputs.cache
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.csproj.CopyComplete
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.dll
+D:\Preuzimanja\CLOUD-konacno\Cloud-Projekat\Cloud\KorisnikService_Data\obj\Debug\KorisnikService_Data.pdb

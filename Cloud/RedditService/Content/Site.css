@@ -1,24 +1,271 @@
-﻿body {
+﻿.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+    .pagination a, .pagination span {
+        margin: 0 5px;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        text-decoration: none;
+        color: #333;
+    }
+
+        .pagination a:hover {
+            background-color: #f4f4f4;
+        }
+
+    .pagination .current-page {
+        background-color: #333;
+        color: #fff;
+    }
+
+
+body {
     padding-top: 50px;
-    padding-bottom: 20px;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding-top: 50px;
+    margin: 0;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 1000;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
+.profile-icon {
+    border-radius: 50%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border: 2px solid white;
+    transition: transform 0.3s;
+}
+
+    .profile-icon:hover {
+        transform: scale(1.1);
+    }
+
+.form-container {
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    display: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: white;
+    overflow-y: auto; /* Dodajemo skrol traku za vertikalno skrolovanje */
+    max-height: calc(85vh - 150px);
+}
+
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+input[type="text"],
+input[type="password"],
 textarea {
-    max-width: 280px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+input[type="submit"],
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: darkslategray;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+    input[type="submit"]:hover,
+    button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.card {
+    width: calc(30% - 100px); /* Smanjujemo širinu kartica */
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        margin-top: 0;
+        font-size: 22px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .card p {
+        flex-grow: 1;
+    }
+
+    .card span {
+        color: gray;
+        font-size: 14px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+.vote-button {
+    padding: 10px;
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+    .vote-button:hover {
+        background-color: black;
+        transform: scale(1.05);
+    }
+
+.comment {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .comment li {
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+
+.search-sort-container {
+    margin: 20px;
+}
+
+    .search-sort-container h2 {
+        margin-top: 0;
+    }
+
+    .search-sort-container form,
+    .search-sort-container a {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .search-sort-container input[type="text"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    .search-sort-container button {
+        padding: 10px;
+        background-color: darkslategray;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s;
+    }
+
+        .search-sort-container button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+.search-form button,
+.sort-form button {
+    width: auto;
+    padding: 8px 16px;
+    background-color: darkslategray;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+    margin-right: 10px;
+}
+
+    .search-form button:hover,
+    .sort-form button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+.search-form input[type="text"] {
+    width: calc(40% - 100px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-right: 10px;
+}
+
+.sort-button {
+    width: 300px; /* Možete prilagoditi širinu prema vašim potrebama */
+    margin-right: 10px; /* Dodajemo razmak između dugmadi */
 }
