@@ -1,1 +1,1 @@
-# Projekat iy predmeta Razvoj Cloud aplikacija u pametnim mrežama
+# Projekat iz predmeta Razvoj Cloud aplikacija u pametnim mrežama
